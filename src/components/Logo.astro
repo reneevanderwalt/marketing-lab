@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets'
+import logo from '../assets/img/drippdrop-logo.png'
+
+/**
+ * Logo Component
+ *
+ * @description Logo description
+ */
+interface Props {
+  /**
+   * Whether to load the image eagerly or lazily
+   * @default 'eager'
+   */
+  loading?: 'eager' | 'lazy'
+}
+
+const { loading = 'eager' }: Props = Astro.props
+---
+
+<a href="/" class="flex items-center gap-2 !no-underline">
+  <Image src={logo} alt="Accessible Astro Logo" width="47" height="37" loading={loading} />
+  <span class="font-bold" style="line-height: 1.1;">DrippDrop<br><span class="text-sm font-normal">by Renée.vanderWalt</span></span>
+  
+</a>
+
+<style lang="scss">
+  a {
+    color: var(--foreground-color);
+  }
+</style>

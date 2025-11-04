@@ -1,0 +1,111 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro';
+import PageHeader from '@components/PageHeader.astro';
+import { Card, Pagination } from 'accessible-astro-components';
+import { getCollection } from "astro:content";
+import type { GetStaticPaths, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+
+// Helper function to create URL-friendly slugs
+const createSlug = (tag: string): string => {
+  return tag
+   .toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with hyphens
+    .replace(/[^\w-]+/g, '')        // Remove all non-word chars except hyphens
+    .replace(/--+/g, '-')           // Replace multiple hyphens with single hyphen
+    .replace(/^-+/, '')             // Trim hyphens from start
+    .replace(/-+$/, '');            // Trim hyphens from end
+};
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const allPosts = await getCollection("blog");
+  const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
+  return uniqueTags.flatMap((tag) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.data.tags.includes(tag)
+    );
+    
+    // Sort posts by newest first
+    const sortedPosts = filteredPosts.sort((a, b) => 
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+    );
+    
+    // Create slug for URL (inline the logic)
+    const tagSlug = tag
+      .toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with hyphens
+    .replace(/[^\w-]+/g, '')        // Remove all non-word chars except hyphens
+    .replace(/--+/g, '-')           // Replace multiple hyphens with single hyphen
+    .replace(/^-+/, '')             // Trim hyphens from start
+    .replace(/-+$/, '');            // Trim hyphens from end
+    
+    // Return paginated results for this tag
+    return paginate(sortedPosts, {
+      params: { tag: tagSlug },
+      props: { originalTag: tag }, // Pass the original tag for display
+      pageSize: 6
+    });
+  });
+}) satisfies GetStaticPaths;
+
+interface Props {
+  page: Page<CollectionEntry<'blog'>>;
+  originalTag: string;
+}
+
+const { page, originalTag } = Astro.props;
+const { tag } = Astro.params; // This is now the slugified version
+
+// Prepare pagination props
+const currentPage = page.currentPage;
+const totalPages = Math.ceil(page.total / page.size);
+const postsForCurrentPage = page.data;
+---
+
+<DefaultLayout title={`Posts tagged: ${originalTag}`}>
+  <PageHeader
+    title={`Posts tagged: ${originalTag}`}
+    subtitle={`Showing ${page.start + 1}-${page.end + 1} of ${page.total} post${page.total !== 1 ? 's' : ''} with this tag`}
+    bgType="bordered"
+  />
+
+  <section class="my-12">
+    <div class="container">
+      <p class="text-sm mb-6"><em>Posts {page.start + 1} through {page.end + 1} of {page.total} total posts tagged "{originalTag}"</em></p>
+      
+      <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {postsForCurrentPage.map((post) => (
+          <li>
+            <Card
+              imageComponent={post.data.image?.url}
+              url={`/blog/${post.id}/`}
+              title={post.data.title}
+              footer={post.data.pubDate.toString().slice(0,10)}
+            >
+              {post.data.description}
+            </Card>
+          </li>
+        ))}
+      </ul>
+      
+      {page.total === 0 && (
+        <p class="text-center text-gray-600">No posts found with this tag.</p>
+      )}
+
+      {totalPages > 1 && (
+        <div class="mt-12 grid place-content-center">
+          <Pagination
+            firstPage={page.url.prev ? `/tags/${tag}` : null}
+            previousPage={page.url.prev ? page.url.prev : null}
+            nextPage={page.url.next ? page.url.next : null}
+            lastPage={page.url.next ? `/tags/${tag}/${totalPages}` : null}
+            currentPage={`${currentPage}`}
+            totalPages={`${totalPages}`}
+            ariaLabel={`${originalTag} tag pagination`}
+          />
+        </div>
+      )}
+    </div>
+  </section>
+</DefaultLayout>

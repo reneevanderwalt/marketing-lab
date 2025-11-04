@@ -1,0 +1,78 @@
+---
+import { getCollection } from "astro:content";
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import CallToAction from "@components/CallToAction.astro";
+import { Card, Pagination } from 'accessible-astro-components'
+import type { GetStaticPaths, Page } from 'astro'
+import type { CollectionEntry } from 'astro:content'
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const blogPosts = await getCollection('blog')
+
+  // Sort blog posts by newest first
+  const sortedBlogPosts = blogPosts.sort((a, b) => 
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  )
+
+  return paginate(sortedBlogPosts, { pageSize: 6 })
+}) satisfies GetStaticPaths
+
+interface Props {
+  page: Page<CollectionEntry<'blog'>>
+}
+
+const { page } = Astro.props
+
+// Prepare pagination props
+const currentPage = page.currentPage
+const totalPages = Math.ceil(page.total / page.size)
+
+// Use page.data instead of fetching all posts again
+const postsForCurrentPage = page.data
+---
+
+<DefaultLayout
+  title="Blog"
+  description="All Customer Insights Features, Tips and Tricks Explained, So You Can Do It Yourself."
+>
+  <PageHeader
+    title="DrippDrop Blog"
+    subtitle='All Customer Insights features, tips and tricks explained, so you can do it yourself. <br/>Or <a href="/tags">take a look</a> at the overview per category.'
+    bgType="bordered"
+  />
+
+  <section class="my-12">
+    <div class="container">
+      <p class="text-sm"><em>Blog {page.start + 1} through {page.end + 1} of {page.total} total blogs</em></p>
+       <ul class="my-3 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        
+        {postsForCurrentPage.map((post) => 
+          <li>
+            <Card
+              imageComponent={post.data.image.url}
+              url={`/blog/${post.id}/`}
+              title={post.data.title}
+              footer={post.data.pubDate.toString().slice(0,10)}
+            >
+              {post.data.description}
+            </Card>
+          </li>
+        )}
+       </ul>
+
+      <div class="mt-12 grid place-content-center">
+       <Pagination
+  firstPage={page.url.prev ? '/blog' : null}
+  previousPage={page.url.prev ? page.url.prev : null}
+  nextPage={page.url.next ? page.url.next : null}
+  lastPage={page.url.next ? `/blog/${totalPages}` : null}
+  currentPage={`${currentPage}`}
+  totalPages={`${totalPages}`}
+  ariaLabel="Blog pagination"
+/>
+      </div>
+    </div>
+  </section>
+  <CallToAction/>
+</DefaultLayout>

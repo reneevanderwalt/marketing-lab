@@ -1,17 +1,128 @@
 ---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import Hero from '@components/Hero.astro'
+import Feature from '@components/Feature.astro'
+import ContentMedia from '@components/ContentMedia.astro'
+import { getCollection } from "astro:content";
+import { Badge, Card } from 'accessible-astro-components';
+import { Icon } from 'astro-icon/components'
+import { Accordion, AccordionItem } from 'accessible-astro-components'
+import CallToAction from '@components/CallToAction.astro';
+
+// Get all blog posts and sort by publication date (newest first)
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+const latestPosts = sortedPosts.slice(0, 3);
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Marketing Lab</title>
-	</head>
-	<body>
-		<h1>Marketing Lab</h1>
-		<h2>Your Extra Brain in Customer Insights</h2>
-	</body>
-</html>
+<DefaultLayout title="Home">
+  <Hero />
+
+      <ContentMedia imgSrc="/accessible-components.webp">
+    <h2>Dripping Ideas, Dropping Results</h2>
+    <p class="text-2xl">
+      Hi, I’m Renée. I blend 15+ years of marketing experience with deep Customer Insights 
+      expertise to help teams work smarter, personalize better, and see results faster. 
+      Where most people just build segments and journeys, I bring strategy, creativity, 
+      and real marketing thinking.</p>
+      <p>
+      Already using Customer Insights?
+      <a href="/contact" rel="noopener noreferrer">
+       Let my marketing mind do the dripping.
+      </a>
+    </p>
+  </ContentMedia>
+  <section class="my-64">
+    <div class="container">
+      <h2 class="mb-8 text-6xl">The DrippDrop Blog</h2>
+      <p class="text-2xl mb-8"><a href="/blog">Drops</a> full of practical insights, smarter marketing ideas, 
+        and Customer Insights shortcuts you didn’t know existed.</p>
+     
+      <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {latestPosts.map((post) => (
+          <li>
+            <Card
+              imageComponent={post.data.image?.url}
+              url={`/blog/${post.id}/`}
+              title={post.data.title}
+              footer={post.data.pubDate.toLocaleDateString().slice(0,10)}
+            >
+              {post.data.tags.map((tag) => (
+          <Badge type="default">{tag}</Badge>
+        ))}
+        <p><em>{post.data.description}</em></p>
+            </Card>
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  </section>
+
+      <section class="my-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">How I Bring Customer Insights To Life</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="tabler:building-bridge-2" title="One Brain, All Skills">
+          I speak both IT and Marketing, so I know what you want and why you want it. Yes, I build it too.
+        </Feature>
+        <Feature icon="tabler:zoom-check" title="Creative Meets Data">
+          Pretty emails, smart segments, powerful journeys. Designed with data, tested for results.
+        </Feature>
+        <Feature icon="tabler:brain" title="Your Sparring Partner">
+          I challenge your assumptions, sharpen your ideas, and accelerate results.
+        </Feature>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="my-64">
+    <div class="container grid grid-cols-1 gap-12 md:grid-cols-2">
+      <div class="flex flex-col items-start gap-4">
+        <h2 class="text-6xl">Drip… Drop… Aha!</h2>
+        <p class="text-2xl">
+          Don’t take my word for it, these are the aha-moments straight from my sessions.
+        </p>
+        <a class="button has-icon" href="/contact">
+          <Icon name="tabler:droplet" />Get your aha!</a>
+      </div>
+      <div class="space-content">
+        <Accordion>
+            <AccordionItem name="exclusive" title="I didn't know that was possible!" open variant="chevron">
+            <p>
+              Customer Insights moves fast, new features drop every month. I stay on top of them, so you don’t have to. And I’ll make sure you actually use them to your advantage.
+            </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="I hadn't looked at it that way!" variant="chevron">
+            <p>
+              I help you see Marketing and Customer Insights from a different angle, shaped by years of experience in many marketing <em>kitchens</em>.
+            </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="I hadn't thought of that!" variant="chevron">
+            <p>
+              You focus on the obvious. I spot the things you don’t. My mix of marketing expertise and Customer Insights know-how brings fresh ideas to the table.
+            </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="Does it work like that?!" variant="chevron">
+            <p>
+              Working in Customer Insights doesn’t always mean understanding it. I help you get it, so you can work smarter, faster, and with confidence.
+            </p>
+          </AccordionItem>
+
+        </Accordion>
+      </div>
+    </div>
+  </section>
+
+  <CallToAction/>
+</DefaultLayout>
+
+<style>
+  .avatar {
+    border: 1px solid var(--border-color-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-s);
+  }
+</style>

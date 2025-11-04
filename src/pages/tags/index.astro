@@ -1,0 +1,77 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro';
+import PageHeader from '@components/PageHeader.astro';
+import { getCollection } from "astro:content";
+
+// Get all blog posts and extract unique tags
+const allPosts = await getCollection("blog");
+const allTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
+// Create tag data with counts and slugs
+const tagData = allTags.map((tag) => {
+  const postCount = allPosts.filter((post) => 
+    post.data.tags.includes(tag)
+  ).length;
+  
+  // Create slug for URL (same logic as in tag pages)
+  const slug = tag
+     .toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with hyphens
+    .replace(/[^\w-]+/g, '')        // Remove all non-word chars except hyphens
+    .replace(/--+/g, '-')           // Replace multiple hyphens with single hyphen
+    .replace(/^-+/, '')             // Trim hyphens from start
+    .replace(/-+$/, '');            // Trim hyphens from end
+  
+  return {
+    name: tag,
+    slug: slug,
+    count: postCount
+  };
+});
+
+// Sort tags alphabetically
+const sortedTags = tagData.sort((a, b) => a.name.localeCompare(b.name));
+
+// Calculate total posts
+const totalPosts = allPosts.length;
+---
+
+<DefaultLayout title="All Tags">
+  <PageHeader
+    title="All Tags"
+    subtitle={`Browse all ${sortedTags.length} tags from ${totalPosts} blog posts`}
+    bgType="bordered"
+  />
+
+  <section class="my-12">
+    <div class="container">
+      <div class="mb-8">
+        <p class="text-2xl text-gray-700 mb-4">
+          Explore topics by browsing my tag collection.
+        </p>
+      </div>
+
+      {sortedTags.length > 0 ? (
+
+            <div class="mb-8">
+          {sortedTags.map((tag) => (
+            
+                <p class="text-2xl text-gray-700 mb-3">
+                  <a 
+              href={`/tags/${tag.slug}/`}
+              class="mb-8 text-lg"
+            >{tag.name}</a>
+                </p>
+
+          ))}
+        </div>
+
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-gray-600 text-lg">No tags found.</p>
+        </div>
+      )}
+
+    </div>
+  </section>
+</DefaultLayout>
