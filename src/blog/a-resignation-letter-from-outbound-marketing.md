@@ -2,7 +2,7 @@
 title: I Quit My Job
 pubDate: 2025-03-24
 image:
-    url: 'https://marketing-lab.nl/assets/images/blog/resignation-letter-from-outbound-marketing/resignation-letter-from-outbound-marketing.jpg'
+    url: 'http://localhost:4321/src/assets/images/posts/i-quit-my-job.jpg'
     alt: 'I Quit My Job'
 description: |
   A word of farewell from my good old companion, Outbound Marketing.

@@ -45,7 +45,10 @@ const latestPosts = sortedPosts.slice(0, 3);
             <Card
               imageComponent={post.data.image?.url}
               url={`/blog/${post.id}/`}
+              imageAlt={post.data.image?.alt}
+              height={133}
               title={post.data.title}
+              class="w-full"
               footer={post.data.pubDate.toLocaleDateString().slice(0,10)}
             >
               {post.data.tags.map((tag) => (
