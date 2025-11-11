@@ -17,11 +17,11 @@ Reputation is one of the (email) marketing “buzzwords” of the moment. With t
 Favicon, one of those words that you can pronounce in two ways, either ‘favicon’ or ‘fav icon’. Choose your pick 😉 It is a combination of the words ‘favorite’ and ‘icon’.
 A favicon is the image that you see next to your webpage title in a web browser. It gives the visitor a feeling of trust when it visits your website, because it recognizes your logo. 
 
-![Browser with three tabs and favicons](/assets/images/blog/build-trust-the-favicon/Browser_with_three_tabs_and_favicons.png)
+![Browser with three tabs and favicons](../assets/images/posts/build-trust-the-favicon/Browser_with_three_tabs_and_favicons.png)
 
 It also serves as a convenient search attribute in your favorites list!
 
-![Favorites with favicons](/assets/images/blog/build-trust-the-favicon/Favorite_bar_with_favicons.png)
+![Favorites with favicons](../assets/images/posts/build-trust-the-favicon/Favorite_bar_with_favicons.png)
 
 ## The technique
 
@@ -51,19 +51,19 @@ This code can be used in the following two use cases.
 
 If you take a look at your Preference Center in your web browser, you’ll probably see something like this:
 
-![Preference center without favicon](/assets/images/blog/build-trust-the-favicon/Preference_center_without_favicon.png)
+![Preference center without favicon](../assets/images/posts/build-trust-the-favicon/Preference_center_without_favicon.png)
 
 That is not what we want!
 
 So open the HTML editor of your Preference Center in your Compliancy Profile. Paste the four lines of code, above the `<style>` section of your HTML, so it looks like this:
 
-![Preference Center HTML with four lines of favicon code](/assets/images/blog/build-trust-the-favicon/Preference_center_html_editor.png)
+![Preference Center HTML with four lines of favicon code](../assets/images/posts/build-trust-the-favicon/Preference_center_html_editor.png)
 
 By the way, if you want to change the title "Preference Center" in your web browser tab, please adjust the text between the `<title></title>` elements as well.
 
 So here is the comparison:
 
-![Preference Center comparison of favicons](/assets/images/blog/build-trust-the-favicon/Comparison_Preference_Center_Favicon.png)
+![Preference Center comparison of favicons](../assets/images/posts/build-trust-the-favicon/Comparison_Preference_Center_Favicon.png)
 
 I know what I would prefer, especially since the URL of these Preference Centers are not branded (<a href="https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/boost-customer-confidence-campaign-performance-branded-links-emails-content" target="_blank">yet</a>).
 
@@ -71,21 +71,21 @@ I know what I would prefer, especially since the URL of these Preference Centers
 
 ### Your Real Time Marketing Emails
 
-Since the December update, it is (finally) possible to add a web version link to your Real Time Marketing Emails. Read the <a href="https://meganvwalker.com/view-in-browser-for-realtime-emails-option/" target="_blank">blog post of Megan V Walker</a> on how to do this and read a <a href="https://marketing-lab.nl/from-head-to-toe-where-to-place-web-version-link">previous post of mine</a> on best practices when it comes to the web version link.
+Since the December update, it is (finally) possible to add a web version link to your Real Time Marketing Emails. Read the <a href="https://meganvwalker.com/view-in-browser-for-realtime-emails-option/" target="_blank">blog post of Megan V Walker</a> on how to do this and read a <a href="https://renee.vanderwalt.eu/blog/from-head-to-toe-where-to-place-web-version-link">previous post of mine</a> on best practices when it comes to the web version link.
 
 Now that it is possible, let’s take a look at your web version Emails in your web browser. You probably will see something like this:
 
-![Web version of email without favicon](/assets/images/blog/build-trust-the-favicon/No_favicon_in_web_version.png)
+![Web version of email without favicon](../assets/images/posts/build-trust-the-favicon/No_favicon_in_web_version.png)
 
 Like the Preference Center, we don’t want this here either. So let’s copy the four lines of code again, open up the HTML editor and paste the code before the `<style>` section, so it looks like this:
 
-![Email HTML editor with four lines of code](/assets/images/blog/build-trust-the-favicon/Email_html_editor.png)
+![Email HTML editor with four lines of code](../assets/images/posts/build-trust-the-favicon/Email_html_editor.png)
 
 By the way, your email subject line is automatically added as the title of your web version page, so you don’t have to change this manually.
 
 Here is the comparison of the web version of your email. Looks way better right?
 
-![Web Version comparison](/assets/images/blog/build-trust-the-favicon/Comparison_Web_Version_Favicon.png)
+![Web Version comparison](../assets/images/posts/build-trust-the-favicon/Comparison_Web_Version_Favicon.png)
 
 ## How about Use Case #3?
 
@@ -93,7 +93,7 @@ Here is the comparison of the web version of your email. Looks way better right?
 
 Unfortunately, we cannot change the favicon of the standalone Real Time Marketing Forms. As we take a look at the HTML of these standalone pages (right mouse click > ‘View page source’) , you can see that the script is embedded on this URL and not the actual HTML.
 
-![Actual HTML of Marketing Form](/assets/images/blog/build-trust-the-favicon/Actual_HTML_of_Standalone_Marketing_Form.png)
+![Actual HTML of Marketing Form](../assets/images/posts/build-trust-the-favicon/Actual_HTML_of_Standalone_Marketing_Form.png)
 
 Therefore, the favicon is not placed on this page, and we cannot use this technique here ☹
 

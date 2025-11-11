@@ -37,7 +37,7 @@ The Email Envelope is all the information we see first when the email hits our i
 
 In **Dynamics Customer Insights - Journeys** we can check this in the following section:
 
-![Dynamics Customer Insights - Journeys Email Envelope](/assets/images/blog/email-testing/Dynamics-Customer-Insights-Journeys-Email-Envelope.png)
+![Dynamics Customer Insights - Journeys Email Envelope](../assets/images/posts/email-testing/Dynamics-Customer-Insights-Journeys-Email-Envelope.png)
 
 To perform an additional check on the quality of your email envelop, see which tab your email ends up in within Gmail. You can use this tool from <a href="https://www.litmus.com/gmail-category-tab-test" target="_blank">Litmus</a> for that.
 
@@ -51,15 +51,15 @@ After opening the email, we see all the content in it. As email marketers, we ca
 
 The *typos* and *broken links* can be checked with a Test Send in **Dynamics Customer Insights - Journeys**.
 
-![Dynamics Customer Insights - Journeys Test Send Capabilities](/assets/images/blog/email-testing/Dynamics-Customer-Insights-Journeys-Test-Send-Capabilities.png)
+![Dynamics Customer Insights - Journeys Test Send Capabilities](../assets/images/posts/email-testing/Dynamics-Customer-Insights-Journeys-Test-Send-Capabilities.png)
 
 In **Dynamics Customer Insights - Journeys**, we can check the *rendering* with the default <a href="https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-preview" target="_blank">Litmus integration</a>.
 
-![Dynamics Customer Insights - Journeys Litmus Email Rendering](/assets/images/blog/email-testing/Dynamics-Customer-Insights-Journeys-Litmus-Email-Rendering.png)
+![Dynamics Customer Insights - Journeys Litmus Email Rendering](../assets/images/posts/email-testing/Dynamics-Customer-Insights-Journeys-Litmus-Email-Rendering.png)
 
 Another great feature of **Dynamics Customer Insights - Journeys** is the SPAM checker functionality, as shown in the image below. If you want more details, you can also use a tool like <a href="https://analyze.email/" target="_blank"> Email Analyzer</a>.
 
-![Dynamics Customer Insights - Journeys Spam checker](/assets/images/blog/email-testing/Dynamics-Customer-Insights-Journeys-Spam-checker.png)
+![Dynamics Customer Insights - Journeys Spam checker](../assets/images/posts/email-testing/Dynamics-Customer-Insights-Journeys-Spam-checker.png)
 
 #### Accessibility
 Sending out accessible emails is good for the engagement of **all** audiences; you are more inclusive. So check your accessibility with:
@@ -69,23 +69,23 @@ Sending out accessible emails is good for the engagement of **all** audiences; y
 
 In **Dynamics Customer Insights - Journeys**, we have a standard accessibility checker, which checks mostly for content and colours. This is also a good way to check if all images have ALT texts.
 
-![Dynamics Customer Insights - Journeys Accessbility checker](/assets/images/blog/email-testing/Dynamics-Customer-Insights-Journeys-Accessibility-Checker.png)
+![Dynamics Customer Insights - Journeys Accessbility checker](../assets/images/posts/email-testing/Dynamics-Customer-Insights-Journeys-Accessibility-Checker.png)
 
 If you send out a Live Test Send (more on this later), you can open the web version of your email in Microsoft Edge. If you open the web version in Immersive Reader (F9) mode, you can make the browser read your email aloud.
 
-![Microsoft Edge - Screen Reader](/assets/images/blog/email-testing/Microsoft-Edge-Screen-Reader-Capabilities.png)
+![Microsoft Edge - Screen Reader](../assets/images/posts/email-testing/Microsoft-Edge-Screen-Reader-Capabilities.png)
 
 #### Segmentation & Personalization
 
 1. Check your audience
 2. Check personalization
 
-In **Dynamics Customer Insights - Journeys**, we can test the audience by looking at the segment. Checking your personalization is something you can do in the Preview and test section by editing the sample data or perform a <a href="https://www.marketing-lab.nl/work/how-to-send-live-test-email">Live Test Send</a>.
+In **Dynamics Customer Insights - Journeys**, we can test the audience by looking at the segment. Checking your personalization is something you can do in the Preview and test section by editing the sample data or perform a <a href="https://renee.vanderwalt.eu/blog/how-to-send-live-test-email">Live Test Send</a>.
 
-![Dynamics Customer Insights - Journeys Testing with Sample Data](/assets/images/blog/email-testing/Dynamics-Customer-Insights-Journeys-Testing-With-Sample-Data.png)
+![Dynamics Customer Insights - Journeys Testing with Sample Data](../assets/images/posts/email-testing/Dynamics-Customer-Insights-Journeys-Testing-With-Sample-Data.png)
 
 #### Test a Live Send
-In my other post, you can check out different ways on <a href="https://www.marketing-lab.nl/work/how-to-send-live-test-email">how to send a Test Live Send email</a> to yourself or your colleague. In this way you can test all the following elements:
+In my other post, you can check out different ways on <a href="https://renee.vanderwalt.eu/blog/how-to-send-live-test-email">how to send a Test Live Send email</a> to yourself or your colleague. In this way you can test all the following elements:
 
 1. Email Envelope
 2. Email Content

@@ -2,7 +2,7 @@
 title: Bouncing Hard🦘
 pubDate: 2023-11-07
 image:
-    url: 'https://marketing-lab.nl/assets/images/blog/bouncing-hard/Bouncing_Hard.jpg'
+    url: 'http://localhost:4321/src/assets/images/posts/ab-testing-in-customer-insights-journeys.jpg'
     alt: 'Bouncing Hard'
 description: |
   The truth about Bounces, Blocks and Suppression Lists in Dynamics Customer Insights – Journeys 
@@ -13,7 +13,7 @@ tags: ["email marketing", "analytics"]
 
 With Google and Yahoo announcing their new and stricter SPAM policy, the time is now to take a closer look at all your email data. Not just the fun stuff, like Click Through Rates and Form Conversion Rates, but more specifically the technical stuff. Things that are happening in the magic black box of Dynamics Customer Insights – Journeys (previously known as Marketing). In this blog I will help you understand how to interpret and deal with the outcomes of this magic black box!
 
-![Bounce overview](/assets/images/blog/bouncing-hard/Bounce_overview.png)
+![Bounce overview](../assets/images/posts/bouncing-hard/Bounce_overview.png)
 
 ## Terminology 
 
@@ -48,13 +48,13 @@ The suppression list exists of three parts:
 
 This is the inflow from either a trigger or segment based journey. In the example below, there are 409 recipients entering the email tile. 
 
-![Number of recipients](/assets/images/blog/bouncing-hard/Number_of_recipients.png)
+![Number of recipients](../assets/images/posts/bouncing-hard/Number_of_recipients.png)
 
 ### Blocked 
 
 Blocked recipients will never receive an email from Dynamics Customer Insights - Journeys. So, before the emails are sent, the blocked recipients are removed. And that is due to one of the following reasons: 
 
-![Blocked reason overview](/assets/images/blog/bouncing-hard/Blocked_reasons.png)
+![Blocked reason overview](../assets/images/posts/bouncing-hard/Blocked_reasons.png)
 
 ### Sent 
 
@@ -64,13 +64,13 @@ To the remaining recipients, Dynamics Customer Insights – Journeys will try to
 
 **409 – 5 = 404 emails**
 
-![Sents overview](/assets/images/blog/bouncing-hard/Sents.png)
+![Sents overview](../assets/images/posts/bouncing-hard/Sents.png)
 
 ### Delivery failed 
 
 When the emails are sent Dynamics Customer Insights – Journey receive bounce messages back from the email providers. This could be one of three bounce types: 
 
-![Delivery failed reasons overview](/assets/images/blog/bouncing-hard/Delivery_failed_reasons.png)
+![Delivery failed reasons overview](../assets/images/posts/bouncing-hard/Delivery_failed_reasons.png)
 
 Only the hard bounce and other (which is a block bounce) will be accounted for as not delivered. A soft bounce only accounts as a not delivered message when it is the fifth time the soft bounce appears. 
 
@@ -82,7 +82,7 @@ After failed delivery recipients are removed, Dynamics Customer Insights – Jou
 
 **404 – 1 = 403** 
 
-![Delivered overview](/assets/images/blog/bouncing-hard/Delivered.png)
+![Delivered overview](../assets/images/posts/bouncing-hard/Delivered.png)
 
 ## What to do with those bounces? 
 

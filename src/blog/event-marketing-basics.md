@@ -56,19 +56,8 @@ The basics of saying thank you in event marketing:
 
 Three simple steps to kick off your Event Marketing Basics. Sending out invitations, receiving RSVP’s and saying thanks to the attendees. This is what it will look like in Dynamics Customer Insights - Journeys:
 
-![Event Marketing Basics in Customer Insights - Journeys](/assets/images/blog/event-marketing-basics/EventMarketingJourneys.jpg)
+![Event Marketing Basics in Customer Insights - Journeys](../assets/images/posts/event-marketing-basics/EventMarketingJourneys.jpg)
 
 In the coming posts I will expand these three basics with a lot more fun!
 
 Want to know how you can manage the Event Marketing Basics in the Event Module in Dynamics Customer Insights - Journeys (previously Dynamics Marketing)? Or do you want help setting up your own events? Just give me a message on <a href="https://www.linkedin.com/in/ren%C3%A9e-van-der-walt-89697024/" target="_blank">LinkedIn</a> (help for birthday parties are excluded 🥳)!
-
-#### Continue the Event story
-
-<a href="https://marketing-lab.nl/work/please-register-here">Please register here - The invitation process</a>
-
-<a href="https://marketing-lab.nl/work/urgency-in-event-communications">Why You Need Urgency in Your Event Communications</a>
-
-<a href="https://marketing-lab.nl/work/social-proof-in-event-communications">Using the Concept of Social Proof in Event Communications</a>
-
-<a href="https://marketing-lab.nl/work/seven-tips-to-prevent-no-shows">Seven Tips to Prevent No-Shows</a>
-

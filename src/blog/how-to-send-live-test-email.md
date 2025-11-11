@@ -33,19 +33,19 @@ Ensure your email content is in *Live* mode.
 
 Create a Custom Trigger with your target entity (either lead or contact) and name it something like "QUICKSTART - Contact" (or Lead). Add no other attributes, and set the trigger to *Ready to use* mode.
 
-![Dynamics Customer Insights - Journeys creating the Quickstart trigger](/assets/images/blog/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Quickstart-Trigger.png)
+![Dynamics Customer Insights - Journeys creating the Quickstart trigger](../assets/images/posts/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Quickstart-Trigger.png)
 
 **Step 3**
 
 Create a Journey with your QUICKSTART - Contact trigger as the start, and follow it with your email from Step 1. Then, set the Journey to *LIVE*.
 
-![Dynamics Customer Insights - Journeys adding the Quickstart trigger to a journey](/assets/images/blog/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Journey-With-Quickstart-Trigger.png)
+![Dynamics Customer Insights - Journeys adding the Quickstart trigger to a journey](../assets/images/posts/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Journey-With-Quickstart-Trigger.png)
 
 **Step 4**
 
 Go back to your QUICKSTART - Contact trigger and search for the Contact you want to send the Live Test Send to. Make sure you pick a contact that has the appropriate consent for this email. Hit Test Send, and the journey will start sending your email.
 
-![Dynamics Customer Insights - Journeys using the Quickstart Trigger](/assets/images/blog/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Trigger-Test-Send.png)
+![Dynamics Customer Insights - Journeys using the Quickstart Trigger](../assets/images/posts/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Trigger-Test-Send.png)
 
 > Be aware that the email address of the contact is used to send the email. Always use an email address you have access to.
 > Using this QUICKSTART trigger gives you more flexibility in testing Live emails compared to using a test Segment.
@@ -64,7 +64,7 @@ Ensure your email content is in *Live* mode.
 
 Create a journey that start with the trigger you have used to get your personalization from. Add extra filtering so that the journey is only triggered when the contact/lead matches your test person. The easiest way to do this is by adding a filtering on email address.
 
-![Dynamics Customer Insights - Journeys using the filtering criteria in the trigger](/assets/images/blog/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Test-Send-Trigger-Personalization.png)
+![Dynamics Customer Insights - Journeys using the filtering criteria in the trigger](../assets/images/posts/how-to-send-live-test-send/Dynamics-Customer-Insights-Journeys-Test-Send-Trigger-Personalization.png)
 
 **Step 3**
 
@@ -92,4 +92,4 @@ An easy way to get an overview of this is to create different test scenario's, l
 
 ## Wrap Up
 
-Sending a Live Test Email to yourself as the final test is always a good idea; read in <a href="https://www.marketing-lab.nl/work/email-testing">this blog why</a>. Now you know how to send these Live Test Emails to yourself in different email scenarios!
+Sending a Live Test Email to yourself as the final test is always a good idea; read in <a href="https://renee.vanderwalt.eu/blog/email-testing">this blog why</a>. Now you know how to send these Live Test Emails to yourself in different email scenarios!

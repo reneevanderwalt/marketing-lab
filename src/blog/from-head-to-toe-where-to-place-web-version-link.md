@@ -17,11 +17,11 @@ An email is an HTML file. Now, with the dynamic content we can add to the email,
 
 Here is some HTML for an email addressed to myself.
 
-![HTML of email addressed to Renee](/assets/images/blog/web-version/HTML_personalized_for_Renee.png)
+![HTML of email addressed to Renee](../assets/images/posts/web-version/HTML_personalized_for_Renee.png)
 
 This is the same email but with different HTML tailored for an email addressed to Sara.
 
-![HTML of email addressed to Sara](/assets/images/blog/web-version/HTML_personalized_for_Sara.png)
+![HTML of email addressed to Sara](../assets/images/posts/web-version/HTML_personalized_for_Sara.png)
 
 These individual versions of the email HTML are sent to our email addresses. However, as we all know, some content is not “nicely” shown in some email clients. To make sure people can see a really nice version of your email, you can add a web version link -  a link to an HTML file in which all your nicely designed email code is displayed correctly and opened in a browser. This is always a good fallback to have in your email.
 
@@ -33,17 +33,17 @@ As Megan explained how to insert your web version link in a Real Time Marketing 
 
 This is maybe the most common position to place the web version link.
 
-![Example of web version link in Mailgun Email](/assets/images/blog/web-version/Mailgun_Header_Web_Version.png)
-![Example of web version link in ActiveCampaign Email](/assets/images/blog/web-version/ActiveCampaign_Header_Web_Version.png)
-![Example of web version link in Rijksmuseum Email](/assets/images/blog/web-version/Rijksmuseum_Header_Web_Version.png)
-![Example of web version link in KLM Email](/assets/images/blog/web-version/KLM_Header_Web_Version.png)
+![Example of web version link in Mailgun Email](../assets/images/posts/web-version/Mailgun_Header_Web_Version.png)
+![Example of web version link in ActiveCampaign Email](../assets/images/posts/web-version/ActiveCampaign_Header_Web_Version.png)
+![Example of web version link in Rijksmuseum Email](../assets/images/posts/web-version/Rijksmuseum_Header_Web_Version.png)
+![Example of web version link in KLM Email](../assets/images/posts/web-version/KLM_Header_Web_Version.png)
 
 ### Place it in the footer of your email
 
 Another position to place the web version link is in the footer of your email.
 
-![Example of web version link in Atlassian Email](/assets/images/blog/web-version/Atlassian_Footer_Web_Version.png)
-![Example of web version link in Litmus Email](/assets/images/blog/web-version/Litmus_Footer_Web_Version.png)
+![Example of web version link in Atlassian Email](../assets/images/posts/web-version/Atlassian_Footer_Web_Version.png)
+![Example of web version link in Litmus Email](../assets/images/posts/web-version/Litmus_Footer_Web_Version.png)
 
 ### Where interactivity happens
 
@@ -68,8 +68,8 @@ That is something you need to test, but what would be the measure to determine t
 1. For a better user experience, it might be a good idea to place the web version link in the header of your email. If your readers are experiencing rendering issues, they are highly likely to see them within the first scroll. So it is kind, and good for user experience, to place the web version link in the header. As a result, they don’t have to scroll all the way down through a poorly rendered email to find the web version link in the footer.
 2. If you do decide to place the web version in the header of your email, please make sure you have a decent preheader so your email does not look like this in our inbox.
 
-![Example of wrong pre header text English](/assets/images/blog/web-version/PreHeader_Text_English.png)
+![Example of wrong pre header text English](../assets/images/posts/web-version/PreHeader_Text_English.png)
 
 Dutch version
 
-![Example of wrong pre header text Nederlands](/assets/images/blog/web-version/PreHeader_Text_Nederlands.png)
+![Example of wrong pre header text Nederlands](../assets/images/posts/web-version/PreHeader_Text_Nederlands.png)

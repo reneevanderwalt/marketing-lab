@@ -17,7 +17,7 @@ Recently, I encountered a scenario where I was tempted to build one myself. I wa
 
 Since I want (potential) customers to 'search' through our lookup entity (Colors), I need to grant the Marketing Services User Extensible Role read rights on this entity.
 
-![Add read rights to the Marketing Services User Extensible Role](/assets/images/blog/create-custom-lookup-fields-in-your-real-time-journey-form/Update-marketing-services-user-extensible-role-with-lookup-entity.png)
+![Add read rights to the Marketing Services User Extensible Role](../assets/images/posts/create-custom-lookup-fields-in-your-real-time-journey-form/Update-marketing-services-user-extensible-role-with-lookup-entity.png)
 
 #### Building the Form
 
@@ -27,11 +27,11 @@ First, I start with a simple form containing:
 3. Checkbox for opt-in
 4. Submit button
 
-![A simple Real-Time Journey form](/assets/images/blog/create-custom-lookup-fields-in-your-real-time-journey-form/Simple-real-time-journey-form.png)
+![A simple Real-Time Journey form](../assets/images/posts/create-custom-lookup-fields-in-your-real-time-journey-form/Simple-real-time-journey-form.png)
 
 Next, I add an out-of-the-box lookup field from the contact—*Currency*. I set the field **Make lookup data publicly available** to "Yes" and select a filter and attribute name. Then, I open the HTML editor to inspect the generated HTML code.
 
-![HTML editor of the Real-Time Journey form](/assets/images/blog/create-custom-lookup-fields-in-your-real-time-journey-form/HTML-of-the-currency-field-on-the-form.png)
+![HTML editor of the Real-Time Journey form](../assets/images/posts/create-custom-lookup-fields-in-your-real-time-journey-form/HTML-of-the-currency-field-on-the-form.png)
 
 Let's break down the elements found in the HTML:
 
@@ -101,11 +101,11 @@ Finally, I remove the `data-targetproperty` from the `<div>` element, since this
 
 🥁 Drum roll, please, for the lookup field on the form...
 
-![The final form](/assets/images/blog/create-custom-lookup-fields-in-your-real-time-journey-form/Real-time-journey-form-with-custom-lookup-field.png)
+![The final form](../assets/images/posts/create-custom-lookup-fields-in-your-real-time-journey-form/Real-time-journey-form-with-custom-lookup-field.png)
 
 And now, for the submitted values...
 
-![The final form submission](/assets/images/blog/create-custom-lookup-fields-in-your-real-time-journey-form/Final-form-submission.png)
+![The final form submission](../assets/images/posts/create-custom-lookup-fields-in-your-real-time-journey-form/Final-form-submission.png)
 
 It works!
 

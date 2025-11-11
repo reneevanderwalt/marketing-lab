@@ -59,7 +59,7 @@ At first, I wanted to jump straight into the Customer Insights - Data part, but 
 
 Within your Lakehouse, select the Get data menu and choose the New shortcut option.
 
-![Creating a shortcut in your Microsoft Fabric Lakehouse](/assets/images/blog/ci-j-interaction-data-in-ci-d/Creating-a-shortcut-in-CI-D.png)
+![Creating a shortcut in your Microsoft Fabric Lakehouse](../assets/images/posts/ci-j-interaction-data-in-ci-d/Creating-a-shortcut-in-CI-D.png)
 
 A new widget will open with the different connectors available for shortcuts in Fabric. We are getting our data from Dataverse, so let’s select that one and create a connection. This is where the power of Fabric really comes into play!
 
@@ -67,7 +67,7 @@ Am I being too obvious about how much I love Fabric?
 
 Fabric has a standard Customer Insights - Journeys shortcut connector with all your interaction data – just make sure you actually have some interaction data available in Dataverse, otherwise the tables won’t show up in this widget.
 
-![Select all the interaction data in the shortcut](/assets/images/blog/ci-j-interaction-data-in-ci-d/CI-J-interaction-data-shortcut-infabric.png)
+![Select all the interaction data in the shortcut](../assets/images/posts/ci-j-interaction-data-in-ci-d/CI-J-interaction-data-shortcut-infabric.png)
 
 For this specific step-by-step, I selected all the email data. Please don’t ask me what all this data means, Renée is the marketing expert – I just do what she tells me to.
 
@@ -75,23 +75,23 @@ There’s one more thing we need before we can move back to Customer Insights - 
 
 Back in your Lakehouse, just go to the settings and look up the endpoint. Make sure you copy it into a notepad. You will need it later on in Customer Insights - Data.
 
-![Open the settings in your Lakehouse](/assets/images/blog/ci-j-interaction-data-in-ci-d/Settings-in-your-lakehouse.png)
+![Open the settings in your Lakehouse](../assets/images/posts/ci-j-interaction-data-in-ci-d/Settings-in-your-lakehouse.png)
 
-![Copy the SQL endpoint to a notepad](/assets/images/blog/ci-j-interaction-data-in-ci-d/Copy-the-SQL-endpoint-to-a-notepad.png)
+![Copy the SQL endpoint to a notepad](../assets/images/posts/ci-j-interaction-data-in-ci-d/Copy-the-SQL-endpoint-to-a-notepad.png)
 
 #### Step 2 - Let's Connect
 
 Now that we have our interaction data available in our Lakehouse in Fabric, all we need to do is add the Lakehouse as a data source in Customer Insights - Data. We are connecting directly to the SQL database, and the only way we can do this is by using the Microsoft Power Query connector. Don’t forget to give it a fun name.
 
-![Create a connection with the Microsoft Power Query Connector in Customer Insights - Data](/assets/images/blog/ci-j-interaction-data-in-ci-d/Microsoft-Power-Query-Connector-in-CI-D.png)
+![Create a connection with the Microsoft Power Query Connector in Customer Insights - Data](../assets/images/posts/ci-j-interaction-data-in-ci-d/Microsoft-Power-Query-Connector-in-CI-D.png)
 
 You’ve probably already guessed it, but the next step is to select the Azure SQL database source.
 
-![Set up the Azure SQL database source](/assets/images/blog/ci-j-interaction-data-in-ci-d/Azure-SQL-database-source.png)
+![Set up the Azure SQL database source](../assets/images/posts/ci-j-interaction-data-in-ci-d/Azure-SQL-database-source.png)
 
 Copy your SQL analytics endpoint into the Server field and set up your connection.
 
-![Paste the SQL endpoint in the Server field](/assets/images/blog/ci-j-interaction-data-in-ci-d/Server-connection.png)
+![Paste the SQL endpoint in the Server field](../assets/images/posts/ci-j-interaction-data-in-ci-d/Server-connection.png)
 
 And just like that, we have a connection to our Lakehouse. Magic! Select the tables, and we are ready to start using our data in Customer Insights - Data.
 
@@ -99,7 +99,7 @@ And just like that, we have a connection to our Lakehouse. Magic! Select the tab
 
 Now that we have our tables available, we need to let Customer Insights - Data know how the different tables relate before we can start creating measures and segments. It’s time to create some relationships. Jump to your Tables tab and select the Relationships menu to create a new relationship. Keep in mind, you have to do this for all the tables you want to use in your measures and segments.
 
-![Building the relationships between the interaction tables and the customer profile table](/assets/images/blog/ci-j-interaction-data-in-ci-d/Example-of-relationship-in-CI-D.png)
+![Building the relationships between the interaction tables and the customer profile table](../assets/images/posts/ci-j-interaction-data-in-ci-d/Example-of-relationship-in-CI-D.png)
 
 In this example, we want to relate our EmailClicked table to our Contacts table in Dataverse. Each contact can have more than one (many) clicks, and we can relate the two based on the ContactId column. And just like that, your relationship is created!
 

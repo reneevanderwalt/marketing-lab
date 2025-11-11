@@ -58,23 +58,26 @@ Now that we understand *why* and *what* to A/B test, let’s take a look at the 
 
 The simplest type of A/B test is Content Testing. You create two versions of your content—email, text, or push notification—and select both versions in your journey.
 
+![Dynamics Customer Insights - Journeys: Content A/B Test Journey Setup](../assets/images/posts/ab-testing-in-customer-insights-journeys/AB-Content-Test-Customer-Insights-Journeys.png)
 
 ##### 2. Channel Testing
 
 Channel Testing is set up similarly, but instead of changing the content, you change the delivery channel. Be sure to keep other variables (like timing and message type) consistent.
 
+![Dynamics Customer Insights - Journeys: Channel A/B Test Journey Setup](../assets/images/posts/ab-testing-in-customer-insights-journeys/AB-Channel-Test-Customer-Insights-Journeys.png)
 
 
 ##### 3. Time Testing
 
 Time Testing isn’t difficult either. In this case, we won’t use the A/B test element but instead use the Audience Split element. Then, set your timers to match your testing hypothesis.
 
+![Dynamics Customer Insights - Journeys: Time A/B Test Journey Setup](../assets/images/posts/ab-testing-in-customer-insights-journeys/AB-Timing-Test-Customer-Insights-Journeys.png)
 
 ##### 4. Funnel Testing
 
 Funnel Testing also uses the Audience Split element. You can vary the delay between emails in lane 1 vs. lane 2 or change the number of emails sent in each lane.
 
-
+![Dynamics Customer Insights - Journeys: Funnel A/B Test Journey Setup](../assets/images/posts/ab-testing-in-customer-insights-journeys/AB-Funnel-Test-Customer-Insights-Journeys.png)
 
 ##### 5. Smart Testing
 
@@ -84,12 +87,13 @@ You can define the **Winning Metric** based on the behavior you want to understa
 
 > ⚠️ **Important:** If you choose statistical significance and no winner is found, the remaining audience will receive the email **30 days later**!
 
+![Dynamics Customer Insights - Journeys: Smart A/B Test Journey Setup](../assets/images/posts/ab-testing-in-customer-insights-journeys/AB-Smart-Test-Customer-Insights-Journeys.png)
 
 #### The HOW of Interpreting A/B Test Results
 
 When using the A/B Test element, you’ll receive your test results 4 hours after publishing. So be patient!
 
-
+![Dynamics Customer Insights - Journeys - A/B Test Results](../assets/images/posts/ab-testing-in-customer-insights-journeys/AB-Test-Results-Customer-Insights-Journeys.png)
 
 If you’re using the Audience Split element, you’ll get results sooner—but you’ll need to analyze them yourself. In these cases, I like to use <a href="https://vwo.com/tools/ab-test-significance-calculator/" target="_blank">this free tool</a> to check if my A/B test results are statistically significant. 🤓
 

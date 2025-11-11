@@ -47,7 +47,7 @@ It shows which clients support specific HTML/CSS features so you can avoid rende
 
 **Use it for:** Validating A/B test results
 
-I mentioned this tool in [my blog on A/B testing](https://marketing-lab.nl/work/ab-testing-in-customer-insights-journeys), but it deserves a second shoutout. It’s an easy way to determine whether your test results are statistically significant.
+I mentioned this tool in [my blog on A/B testing](https://renee.vanderwalt.eu/blog/ab-testing-in-customer-insights-journeys), but it deserves a second shoutout. It’s an easy way to determine whether your test results are statistically significant.
 
 Especially useful when running multiple tests—no need to guess if a winner really *won*.
 

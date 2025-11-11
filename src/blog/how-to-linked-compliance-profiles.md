@@ -41,7 +41,7 @@ When sending emails, selecting the right compliance profile ensures they only se
 
 ### Use Case #3 - Multiple Physical Addresses
 
-This scenario is described in <a href="http://marketing-lab.nl/work/working-with-multiple-physical-addresses-in-compliance-profile">this helpful blog</a>.
+This scenario is described in <a href="http://renee.vanderwalt.eu/blog/working-with-multiple-physical-addresses-in-compliance-profile">this helpful blog</a>.
 
 ## How To Set This Up?
 
@@ -55,7 +55,7 @@ First, set up your *default* compliance profile. Configure all enforcement model
 
 Create a new compliance profile, ensuring you check the “Use previously captured consent” box and select your default compliance profile.
 
-![Create linked compliance profile](/assets/images/blog/how-to-linked-compliance-profiles/Set-up-linked-compliance-profile-multi-langual.png)
+![Create linked compliance profile](../assets/images/posts/how-to-linked-compliance-profiles/Set-up-linked-compliance-profile-multi-langual.png)
 
 ## Step 3 - Adjust Preference Pages
 
