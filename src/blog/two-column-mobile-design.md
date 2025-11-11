@@ -1,5 +1,5 @@
 ---
-title: Responsive Two-Column Email Design: A How-To Guide
+title: Responsive Two-Column Email Design - A How-To Guide
 pubDate: 2025-03-14
 image:
     url: 'http://localhost:4321/src/assets/images/posts/ab-testing-in-customer-insights-journeys.jpg'

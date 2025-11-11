@@ -1,5 +1,5 @@
 ---
-title: InboxInspiration: Personalization Mistakes from My Inbox
+title: InboxInspiration - Personalization Mistakes from My Inbox
 pubDate: 2024-10-28
 image:
     url: 'http://localhost:4321/src/assets/images/posts/ab-testing-in-customer-insights-journeys.jpg'

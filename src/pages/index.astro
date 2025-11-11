@@ -52,9 +52,9 @@ const latestPosts = sortedPosts.slice(0, 3);
               footer={post.data.pubDate.toLocaleDateString().slice(0,10)}
             >
               {post.data.tags.map((tag) => (
-          <Badge type="default">{tag}</Badge>
+          <Badge type="default" style="margin-right: 5px; margin-bottom: 5px;">{tag}</Badge>
         ))}
-        <p><em>{post.data.description}</em></p>
+
             </Card>
           </li>
         ))}
