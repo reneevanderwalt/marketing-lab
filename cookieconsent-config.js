@@ -15,11 +15,11 @@ CookieConsent.run({
         translations: {
             en: {
                 consentModal: {
-                    title: 'We use cookies',
+                    title: 'I use cookies',
                     description: 'Cookie modal description',
                     acceptAllBtn: 'Accept all',
                     acceptNecessaryBtn: 'Reject all',
-                    showPreferencesBtn: 'Manage Individual preferences'
+                    showPreferencesBtn: 'Manage your preferences'
                 },
                 preferencesModal: {
                     title: 'Manage cookie preferences',
@@ -29,11 +29,7 @@ CookieConsent.run({
                     closeIconLabel: 'Close modal',
                     sections: [
                         {
-                            title: 'Somebody said ... cookies?',
-                            description: 'I want one!'
-                        },
-                        {
-                            title: 'Strictly Necessary cookies',
+                            title: 'Strictly Necessary Cookies',
                             description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
 
                             //this field will generate a toggle linked to the 'necessary' category
@@ -41,12 +37,12 @@ CookieConsent.run({
                         },
                         {
                             title: 'Performance and Analytics',
-                            description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
+                            description: 'These cookies collect information about how you use my website. All of the data is anonymized and cannot be used to identify you.',
                             linkedCategory: 'analytics'
                         },
                         {
                             title: 'More information',
-                            description: 'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>'
+                            description: 'For any queries in relation to my policy on cookies and your choices, please <a href="mailto:renee@vanderwalt.eu">contact me</a>.'
                         }
                     ]
                 }
