@@ -22,6 +22,10 @@ ol.incremented {
   counter-reset: item;
 }
 
+ol{
+  list-style: decimal;
+}
+
 ol.incremented ol {
   counter-reset: item;
 }
