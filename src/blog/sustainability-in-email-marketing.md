@@ -20,9 +20,9 @@ The <a href="https://parcel.io/tools/carbon-footprint" target="_blank">Parcel to
 
 I emphasize **actual** because there is a difference between the HTML from the Dynamics Customer Insights - Journeys email editor and the **actual** HTML that is sent in the email. Surprising, isn’t it? 👻
 
-To get the correct HTML, send a <a href="https://marketing-lab.nl/work/how-to-send-live-test-email">live test email</a> to yourself, including the web version link. Open the web version link, right-click, and select "View page source."
+To get the correct HTML, send a <a href="https://renee.vanderwalt.eu/blog/how-to-send-live-test-email">live test email</a> to yourself, including the web version link. Open the web version link, right-click, and select "View page source."
 
-![Sustainability in Email Marketing By Adding the Footprint to the Email](/assets/images/blog/sustainability-in-email-marketing/Getting-actual-HTML-of-Email.png)
+![Sustainability in Email Marketing By Adding the Footprint to the Email](../assets/images/posts/sustainability-in-email-marketing/Getting-actual-HTML-of-Email.png)
 
 This will provide the file containing the **actual** HTML of your email. Copy and paste this HTML into the Parcel tool to calculate your email's carbon footprint.
 
@@ -30,7 +30,7 @@ This will provide the file containing the **actual** HTML of your email. Copy an
 
 Great question! There are several ways to use this information. First, you can measure the environmental impact of your campaigns and include it in environmental reports. Additionally, you can raise awareness among your audience about their email footprint, as shown in the example below.
 
-![Sustainability in Email Marketing By Adding the Footprint to the Email](/assets/images/blog/sustainability-in-email-marketing/Carbon-footprint-in-email.png)
+![Sustainability in Email Marketing By Adding the Footprint to the Email](../assets/images/posts/sustainability-in-email-marketing/Carbon-footprint-in-email.png)
 
 ### Keep a Clean List
 

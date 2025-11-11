@@ -9,7 +9,7 @@ description: |
 tags: ["event marketing", "email marketing"]
 ---
 
-In the <a href="https://marketing-lab.nl/work/event-marketing-basics">previous blog</a> I covered the three basic steps of organising events: inviting, registering, and saying thanks. In this blog, I'll take a closer look at the invite process.
+In the <a href="https://renee.vanderwalt.eu/blog/event-marketing-basics">previous blog</a> I covered the three basic steps of organising events: inviting, registering, and saying thanks. In this blog, I'll take a closer look at the invite process.
 
 The invitations for my daughter’s Elsa-themed 👩🏻‍🦳❄️🤍 3rd birthday party are quite simple. The people I invite are closely related to our family, involved in my daughter's life, and highly engaged in her well-being. So, a simple 'what, when, and where' is more than enough. However, when organizing corporate events, this might not be the case. Nowadays, our inboxes are filled with invitations and reminders. I’ve discovered five common mistakes and how to prevent them!
 
@@ -18,7 +18,7 @@ The invitations for my daughter’s Elsa-themed 👩🏻‍🦳❄️🤍 3rd bi
 We likely have a lot to convey to our (potential) customer. But do we really? Consider this invite from my friends at Litmus. Basic information first, then *kaboom* a CTA! Later, they elaborate on their hook and *kaboom* another CTA!
 
 <video width="100%" controls>
-<source src="/assets/images/blog/please-register-here/Litmus-invitation-example.mp4" type="video/mp4">
+<source src="../assets/images/posts/please-register-here/Litmus-invitation-example.mp4" type="video/mp4">
 </video>
 
 ### You’re invited for an event in the year 2067
@@ -65,13 +65,3 @@ Do these five things right and you'll get the most out of your invitation proces
 5. Different hooks to catch registrations
 
 Want to know how you can manage these five steps in the Event Module in Dynamics Customer Insights - Journeys (previously Dynamics Marketing)? Or do you want help setting up your own events? Just give me a message on <a href="https://www.linkedin.com/in/ren%C3%A9e-van-der-walt-89697024/" target="_blank">LinkedIn</a>!
-
-#### Continue the Event story
-
-<a href="https://marketing-lab.nl/work/event-marketing-basics">Event Marketing Basics</a>
-
-<a href="https://marketing-lab.nl/work/urgency-in-event-communications">Why You Need Urgency in Your Event Communications</a>
-
-<a href="https://marketing-lab.nl/work/social-proof-in-event-communications">Using the Concept of Social Proof in Event Communications</a>
-
-<a href="https://marketing-lab.nl/work/seven-tips-to-prevent-no-shows">Seven Tips to Prevent No-Shows</a>

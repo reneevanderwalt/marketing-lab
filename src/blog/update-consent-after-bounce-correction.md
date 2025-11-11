@@ -19,19 +19,19 @@ Our starting point is the "Email Address Bounce Review Required" field on the co
 
 We start with a modified "Email Address Bounce Review Required" field on the contact.
 
-![When a Contact is Updated](/assets/images/blog/update-consent-after-bounce-correction/When-a-Contact-is-Updated.png)
+![When a Contact is Updated](../assets/images/posts/update-consent-after-bounce-correction/When-a-Contact-is-Updated.png)
 
 We then check if the field value equals 'No.'
 
-![Check the value of Email Address Bounce Review Required equals NO](/assets/images/blog/update-consent-after-bounce-correction/Check-the-Value-of-Email-Address-Bounce-Review-Required.png)
+![Check the value of Email Address Bounce Review Required equals NO](../assets/images/posts/update-consent-after-bounce-correction/Check-the-Value-of-Email-Address-Bounce-Review-Required.png)
 
 Next, we list all the contact point consent records for the bounced email address (we used an additional field for this).
 
-![List all Contact Point Consent Records for the Bounced Email Address](/assets/images/blog/update-consent-after-bounce-correction/List-All-Contact-Point-Consents-for-the-Contact.png) 
+![List all Contact Point Consent Records for the Bounced Email Address](../assets/images/posts/update-consent-after-bounce-correction/List-All-Contact-Point-Consents-for-the-Contact.png) 
 
 We then check if there are any contact point consent records listed.
 
-![Check if there are any rows listed](/assets/images/blog/update-consent-after-bounce-correction/Check-If-There-Are-Rows-Listed.png)
+![Check if there are any rows listed](../assets/images/posts/update-consent-after-bounce-correction/Check-If-There-Are-Rows-Listed.png)
 
 This is the expression we used.
 
@@ -40,19 +40,19 @@ length(outputs('List_All_Contact_Point_Consents_for_the_Contact')?['body/value']
 ```
 For each row, we check whether it is a **purpose** or **topic** contact point consent record. See the <a href="https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/consent-record-creation" target="_blank">Microsoft documentation</a> on this as well.
 
-![Check whether the consent record is a purpose or topic record](/assets/images/blog/update-consent-after-bounce-correction/Check-The-Contact-Point-Consent-Type.png)
+![Check whether the consent record is a purpose or topic record](../assets/images/posts/update-consent-after-bounce-correction/Check-The-Contact-Point-Consent-Type.png)
 
 Finally, we create new contact point consent records for the new email address.
 
-![Create a Purpose Contact Point Consent Record](/assets/images/blog/update-consent-after-bounce-correction/Create-New-Purpose-Contact-Point-Consent-for-Contact.png)
+![Create a Purpose Contact Point Consent Record](../assets/images/posts/update-consent-after-bounce-correction/Create-New-Purpose-Contact-Point-Consent-for-Contact.png)
 
 For creating a topic contact point consent record, it should look like this.
 
-![Create a Topic Contact Point Consent Record](/assets/images/blog/update-consent-after-bounce-correction/Create-New-Topic-Contact-Point-Consent-for-Contact.png)
+![Create a Topic Contact Point Consent Record](../assets/images/posts/update-consent-after-bounce-correction/Create-New-Topic-Contact-Point-Consent-for-Contact.png)
 
 Here is what the entire flow looks like!
 
-![The complete Cloud Flow](/assets/images/blog/update-consent-after-bounce-correction/Final-Flow-To-Update-Consent-After-Bounce-Correction.png)
+![The complete Cloud Flow](../assets/images/posts/update-consent-after-bounce-correction/Final-Flow-To-Update-Consent-After-Bounce-Correction.png)
 
 ### Some Nice Adjustments to Consider
 

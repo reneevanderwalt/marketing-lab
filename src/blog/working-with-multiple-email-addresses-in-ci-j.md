@@ -32,11 +32,11 @@ To send emails to different email addresses associated with a contact, we must a
 
 Select Email Address 2 and Email Address 3 as additional email fields in the Audience Configuration.
 
-![Dynamics Customer Insights - Audience Configuration for the Contact](/assets/images/blog/working-with-multiple-email-addresses-in-ci-j/Setting-up-multiple-email-addresses-in-audience-configuration.png)
+![Dynamics Customer Insights - Audience Configuration for the Contact](../assets/images/posts/working-with-multiple-email-addresses-in-ci-j/Setting-up-multiple-email-addresses-in-audience-configuration.png)
 
 Now, when creating a Journey, we can choose from multiple email addresses.
 
-![Dynamics Customer Insights - Audience Configuration for the Contact](/assets/images/blog/working-with-multiple-email-addresses-in-ci-j/Select-the-email-address-field-in-the-email-in-the-journey.png)
+![Dynamics Customer Insights - Audience Configuration for the Contact](../assets/images/posts/working-with-multiple-email-addresses-in-ci-j/Select-the-email-address-field-in-the-email-in-the-journey.png)
 
 But before sending emails, we need a **consent** record.
 
@@ -44,11 +44,11 @@ But before sending emails, we need a **consent** record.
 
 To send an email, a consent record is typically required. The communication tab on the Contact entity displays the contactability of each email address rather than just the contact as a whole.
 
-![Dynamics Customer Insights - Audience Configuration for the Contact](/assets/images/blog/working-with-multiple-email-addresses-in-ci-j/Multiple-email-address-fields-on-the-communication-tab.png)
+![Dynamics Customer Insights - Audience Configuration for the Contact](../assets/images/posts/working-with-multiple-email-addresses-in-ci-j/Multiple-email-address-fields-on-the-communication-tab.png)
 
 A contact who accesses the Preference Page from an email (regardless of which address received the message) can manage consent for all their associated email addresses.
 
-![Dynamics Customer Insights - Audience Configuration for the Contact](/assets/images/blog/working-with-multiple-email-addresses-in-ci-j/Multiple-email-address-fields-in-the-subscription-center.png)
+![Dynamics Customer Insights - Audience Configuration for the Contact](../assets/images/posts/working-with-multiple-email-addresses-in-ci-j/Multiple-email-address-fields-in-the-subscription-center.png)
 
 **Consent Consistency & Shared Email Addresses**
 
@@ -62,7 +62,7 @@ Next, let’s talk about **matching rules** for form submissions.
 
 When using Marketing or Event Registration Forms in Dynamics Customer Insights - Journeys, it's crucial to configure Matching Rules properly. If multiple email address fields are used, determine whether to apply multiple Matching Rules. The contact should be matched based on the corresponding email address field used in the form.
 
-![Dynamics Customer Insights - Audience Configuration for the Contact](/assets/images/blog/working-with-multiple-email-addresses-in-ci-j/Mutliple-matching-rules.png)
+![Dynamics Customer Insights - Audience Configuration for the Contact](../assets/images/posts/working-with-multiple-email-addresses-in-ci-j/Mutliple-matching-rules.png)
 
 This step is straightforward but easily overlooked!
 
@@ -72,11 +72,11 @@ Finally, let's discuss **email interactions**.
 
 To test this, I created a Journey that sent three different emails to the contact’s three email addresses. Here are the results:
 
-![Dynamics Customer Insights - Audience Configuration for the Contact](/assets/images/blog/working-with-multiple-email-addresses-in-ci-j/Opens-of-different-email-addresses-for-different-emails.png)
+![Dynamics Customer Insights - Audience Configuration for the Contact](../assets/images/posts/working-with-multiple-email-addresses-in-ci-j/Opens-of-different-email-addresses-for-different-emails.png)
 
 On the Contact record, you can view email interaction results for all email addresses. However, you cannot directly see which email address each email was sent to.
 
-A Power BI dashboard can help visualize this data. Check step 1 of <a href="https://marketing-lab.nl/work/ci-j-interaction-data-in-ci-d">this blog post</a> to learn how to set one up.
+A Power BI dashboard can help visualize this data. Check step 1 of <a href="https://renee.vanderwalt.eu/blog/ci-j-interaction-data-in-ci-d">this blog post</a> to learn how to set one up.
 
 If multiple Contacts share an email address, email interactions are not shared across them. The relationship between an email interaction and a Contact is not based on the email address.
 

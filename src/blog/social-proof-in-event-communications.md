@@ -19,19 +19,19 @@ We humans are social creatures and like to be part of a group. This allows us to
 
 ## Using the number of registered people
 
-A great way to create social proof in your event communications is to show the number of people already registered. This is <a href="https://marketing-lab.nl/work/urgency-in-event-communications">the opposite</a> of showing the available capacity. It creates a sense of FOMO (Fear Of Missing Out) and provides social proof. If so many people have registered, then it must be good!
+A great way to create social proof in your event communications is to show the number of people already registered. This is <a href="https://renee.vanderwalt.eu/blog/urgency-in-event-communications">the opposite</a> of showing the available capacity. It creates a sense of FOMO (Fear Of Missing Out) and provides social proof. If so many people have registered, then it must be good!
 
 The number is only as good as the number of people who registered. One registrant might not sound as good as ‘join 36 dedicated email marketer colleagues’ or ‘ join 124 customer service professionals’. So bewbe cautious when you start using this number on your registration form.
 
 ### How to set up the number of registered people?
 
-Since this is already a field on the event itself, this step is much easier. It is called ‘Registration count’. You can use this field in your email communication, but also on the registration form. You can use the how-to video from <a href="https://marketing-lab.nl/work/urgency-in-event-communications">the previous post</a> to get the number on the registration form.
+Since this is already a field on the event itself, this step is much easier. It is called ‘Registration count’. You can use this field in your email communication, but also on the registration form. You can use the how-to video from <a href="https://renee.vanderwalt.eu/blog/urgency-in-event-communications">the previous post</a> to get the number on the registration form.
 
-![Number of registered people on registration form](/assets/images/blog/social-proof/Number_of_registered_people_on_registration_form.png)
+![Number of registered people on registration form](../assets/images/posts/social-proof/Number_of_registered_people_on_registration_form.png)
 
 A good example is to place this number in your 1-week-prior-to-event email to people who have already registered. This way, they might feel extra special to be part of the group, which might increase engagement towards the event and improve your no-show-rate.
 
-![Number of registered people on registration form](/assets/images/blog/social-proof/Number_of_registered_people_in_email.png)
+![Number of registered people on registration form](../assets/images/posts/social-proof/Number_of_registered_people_in_email.png)
 
 ## Using user-generated content
 
@@ -39,18 +39,8 @@ Another way to use social proof in your event communications is the use of user-
 
 If you organize multiple events per year with a similar context or use Dynamics Customer Insights Journeys to manage your courses, training, education or workshops, it is a good idea to use user-generated content inside your invitation and confirmation process. Place a testimonial on your registration form landing page or use photos of previous events in your invitation email. These can help to nudge the (potential) customer to register for your event.
 
-![User-generated content in email](/assets/images/blog/social-proof/Review_in_email.png)
+![User-generated content in email](../assets/images/posts/social-proof/Review_in_email.png)
 
 ## Wrap up
 
 Using social proof in your event communications is a effectibe way to nudge (potential) customers to register. Two simple ways to do this are using the number of people already registered for your event and user-generated content. These can be easily added to your email marketing or event registration form landing page. Just give them a little social nudge! 
-
-#### Continue the Event story
-
-<a href="https://marketing-lab.nl/work/event-marketing-basics">Event Marketing Basics</a>
-
-<a href="https://marketing-lab.nl/work/please-register-here">Please register here - The invitation process</a>
-
-<a href="https://marketing-lab.nl/work/urgency-in-event-communications">Why You Need Urgency in Your Event Communications</a>
-
-<a href="https://marketing-lab.nl/work/seven-tips-to-prevent-no-shows">Seven Tips to Prevent No-Shows</a>

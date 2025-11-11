@@ -33,11 +33,11 @@ Should we include consent in our segment, regardless of the topic?
 
 I would always say yes, primarily because it give you a **'net' view of your recipients**. You can see the number of contacts or leads who will actually receive your email for that specific topic and/or purpose.
 
-![Dynamics Customer Insights - Segment Builder](/assets/images/blog/purpose-and-topic-in-email-or-segment/Dynamics-Customer-Insights-Journeys-Segment-Builder.png)
+![Dynamics Customer Insights - Segment Builder](../assets/images/posts/purpose-and-topic-in-email-or-segment/Dynamics-Customer-Insights-Journeys-Segment-Builder.png)
 
 It's quite easy to do. Simply add these elements to your segment and choose the specific purpose and topic.
 
-![Dynamics Customer Insights - Adding Topics and Purposes to your Segment](/assets/images/blog/purpose-and-topic-in-email-or-segment/Dynamics-Customer-Insights-Journeys-Segment-with-Topic-and-Purpose.png)
+![Dynamics Customer Insights - Adding Topics and Purposes to your Segment](../assets/images/posts/purpose-and-topic-in-email-or-segment/Dynamics-Customer-Insights-Journeys-Segment-with-Topic-and-Purpose.png)
 
 > If you are using a topic in your segment, always make sure to add the parent purpose as well.
 
@@ -47,7 +47,7 @@ What about emails? Should we always add the topic there too?
 
 Again, yes. By aligning the email with your consent structure, you will receive accurate feedback from the one-click unsubscribe. Moreover, if you have a trigger-based journey, this is the only way to set the correct consent structure.
 
-![Dynamics Customer Insights - Adding Topics and Purposes to your Email](/assets/images/blog/purpose-and-topic-in-email-or-segment/Dynamics-Customer-Insights-Journeys-Email-Builder-Compliance-Settings.png)
+![Dynamics Customer Insights - Adding Topics and Purposes to your Email](../assets/images/posts/purpose-and-topic-in-email-or-segment/Dynamics-Customer-Insights-Journeys-Email-Builder-Compliance-Settings.png)
 
 
 ### Wrap-up

@@ -22,7 +22,7 @@ Since these voucher codes are used in external applications, the generation of t
 4.	Create a Real Time Marketing email to get the voucher code to the customer.
 5.	Create a Real Time Marketing journey to combine all things together.
 
-This post will focus on the set-up, so steps one till three. The <a href="https://marketing-lab.nl/using-voucher-codes-in-dynamics-customer-insights-part-2">next post</a> will focus on steps four and five.
+This post will focus on the set-up, so steps one till three. The <a href="https://renee.vanderwalt.eu/blog/using-voucher-codes-in-dynamics-customer-insights-part-2">next post</a> will focus on steps four and five.
 
 ## Create the Table
 
@@ -35,7 +35,7 @@ First we need to create a table where we can store our voucher codes. So create 
 
 So your table looks like this:
 
-![Voucher code table](/assets/images/blog/voucher-codes-part-one/Voucher_code_table.png)
+![Voucher code table](../assets/images/posts/voucher-codes-part-one/Voucher_code_table.png)
   
 Make sure you give users access to create voucher codes and add the table to the Marketing App, so users can create the voucher codes from within the App.
 
@@ -47,13 +47,13 @@ We need to create two Real Time Marketing triggers. One trigger that starts the 
 
 Create a custom trigger called Voucher Code – Create, and starts “When a customer interacts with a website/app”. Add an additional attribute called “Campaign” and set it as Text.
 
-![The voucher code create trigger](/assets/images/blog/voucher-codes-part-one/Voucher_code_create_trigger.png)
+![The voucher code create trigger](../assets/images/posts/voucher-codes-part-one/Voucher_code_create_trigger.png)
  
 ### Trigger: Voucher Code – Out
 
 Create a custom trigger called Voucher Code – Out, and starts “When a customer interacts with a website/app”. Add an additional attribute called “Voucher Code” and set it as Text.
 
-![The voucher code out trigger](/assets/images/blog/voucher-codes-part-one/Voucher_code_out_trigger.png)
+![The voucher code out trigger](../assets/images/posts/voucher-codes-part-one/Voucher_code_out_trigger.png)
  
 ## Create the Power Automate
 
@@ -63,19 +63,19 @@ In this Power Automate we are going to combine the two triggers. So the starting
 
 Start the Power Automate based on an action.
  
-![Power Automate starts on an action](/assets/images/blog/voucher-codes-part-one/Power_automate_starts_on_action.png)
+![Power Automate starts on an action](../assets/images/posts/voucher-codes-part-one/Power_automate_starts_on_action.png)
 
 ### Step 2 – List rows
 
 List the rows of the voucher code table with the corresponding campaign and no contact connected yet.
 
-![List available rows of voucher code table](/assets/images/blog/voucher-codes-part-one/List_rows_of_voucer_code_table.png)
+![List available rows of voucher code table](../assets/images/posts/voucher-codes-part-one/List_rows_of_voucer_code_table.png)
  
 ### Step 3 – Condition
 
 To make sure that there actually is a voucher code available, we check whether or not we receive a voucher code from the previous step.
 
-![Condition to check if there are available voucher codes](/assets/images/blog/voucher-codes-part-one/Condition_to_check_availability_of_voucher_codes.png)
+![Condition to check if there are available voucher codes](../assets/images/posts/voucher-codes-part-one/Condition_to_check_availability_of_voucher_codes.png)
  
 The expression that I use in this step equals:
 ```go
@@ -86,7 +86,7 @@ first(body('List_Voucher_Codes')?['value'])
 
 In the yes lane, the next step is to update the voucher code that we got with the correct contact.
 
-![Update the available voucher code](/assets/images/blog/voucher-codes-part-one/Update_the_voucher_code.png)
+![Update the available voucher code](../assets/images/posts/voucher-codes-part-one/Update_the_voucher_code.png)
   
 The expression that I use in the Row ID field is:
 ```go
@@ -97,7 +97,7 @@ first(body('List_Voucher_Codes')?['Value'])?['cr758_vouchercodeid']
 
 The final step is to add the voucher code to the Voucher Code – Out trigger.
 
-![Use the voucher code out trigger to continue in the journey](/assets/images/blog/voucher-codes-part-one/Use_voucher_code_out_trigger.png)
+![Use the voucher code out trigger to continue in the journey](../assets/images/posts/voucher-codes-part-one/Use_voucher_code_out_trigger.png)
  
 ### Step 6 – No branch
 

@@ -9,7 +9,7 @@ description: |
 tags: ["email marketing", "event marketing", "marketing strategy"]
 ---
 
-Once you're comfortable with the <a href="https://marketing-lab.nl/work/event-marketing-basics">basics of event marketing</a> and your <a href="https://marketing-lab.nl/work/please-register-here">invitation process</a>, you might consider stepping up your game. So, why not introduce some urgency into the event registration process?
+Once you're comfortable with the <a href="https://renee.vanderwalt.eu/blog/event-marketing-basics">basics of event marketing</a> and your <a href="https://renee.vanderwalt.eu/blog/please-register-here">invitation process</a>, you might consider stepping up your game. So, why not introduce some urgency into the event registration process?
 
 For my daughter’s Elsa-themed 👩🏻‍🦳❄️🤍 3rd birthday party, where there's no commercial benefit, the need to create urgency isn't particularly high. However, when organizing events with commercial goals such as generating leads, creating opportunities, and following up on them, incorporating urgency becomes crucial. Therefore, building urgency appears to be the logical next step in your event communications. Discover why it's beneficial and how easily it can be done right in Dynamics Customer Insights – Journeys.
 
@@ -56,12 +56,12 @@ You can incorporate the number of available spots in both your email and registr
 
 Create a new column on the event table as a calculated field. Use the following calculation:
 
-![Event Marketing Basics in Customer Insights - Journeys](/assets/images/blog/building-urgency/Available-Capacity-Field.png)
+![Event Marketing Basics in Customer Insights - Journeys](../assets/images/posts/building-urgency/Available-Capacity-Field.png)
 
 You can choose to display this column on the event form in Dynamics or solely on your registration form, as demonstrated in the following video.
 
 <video width="100%" controls>
-<source src="/assets/images/blog/building-urgency/How-to-add-field-to-registration-form.mp4" type="video/mp4">
+<source src="../assets/images/posts/building-urgency/How-to-add-field-to-registration-form.mp4" type="video/mp4">
 </video>
 
 By the way, you can utilize this method to include other event details on your registration form as well.
@@ -71,13 +71,3 @@ By the way, you can utilize this method to include other event details on your r
 Utilizing urgency in event communications offers numerous benefits. It not only aids in conversion but also enhances teasing efforts. Moreover, these benefits extend beyond event communications to all forms of communication.
 
 By incorporating countdown timers in your emails or displaying the number of available spots on your event registration form, you can effectively nudge (potential) customers to register for your event. Success guaranteed!
-
-#### Continue the Event story
-
-<a href="https://marketing-lab.nl/event-marketing-basics">Event Marketing Basics</a>
-
-<a href="https://marketing-lab.nl/please-register-here">Please register here - The invitation process</a>
-
-<a href="https://marketing-lab.nl/social-proof-in-event-communications">Using the Concept of Social Proof in Event Communications</a>
-
-<a href="https://marketing-lab.nl/seven-tips-to-prevent-no-shows">Seven Tips to Prevent No-Shows</a>

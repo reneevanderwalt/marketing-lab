@@ -17,13 +17,11 @@ So, for the love of everyone who organizes events and feels the same way my daug
 
 We live in an era of planning, scheduling, and shared calendars. If it is not in my calendar, it doesn’t exist. Ensure people know when your event is by getting them to add it to their calendar.
 
-<a href="https://marketing-lab.nl/work/how-to-add-to-calendar">>> Add to Calendar in Customer Insights - Journeys</a>
+<a href="https://renee.vanderwalt.eu/blog/how-to-add-to-calendar">>> Add to Calendar in Customer Insights - Journeys</a>
 
 ## Tip #2 - Reminders
 
 Just like my agenda, it's easier if I'm reminded about an event than if I have to remind myself. A good reminder flow not only helps registrants remember the event, but if done right, it will also make them feel more engaged.
-
-<a href=" https://marketing-lab.nl/work/how-to-create-event-reminder-journey">>> Create a Reminder Flow in Customer Insights - Journeys</a>
 
 ## Tip #3 - Surprise Them on Another Channel
 
@@ -40,32 +38,22 @@ Here are some examples of how to do this:
 
 ## Tip #5 - Personalization
 
-Engagement can also be achieved by personalizing the invitation and reminder process. This makes registrants feel special. Provide them with their own personal agenda if you <a href="https://marketing-lab.nl/work/session-registrations-how-to">use sessions</a>, or use a Customer Voice survey to see what type of visitor they are.
+Engagement can also be achieved by personalizing the invitation and reminder process. This makes registrants feel special. Provide them with their own personal agenda if you <a href="https://renee.vanderwalt.eu/blog/session-registrations-how-to">use sessions</a>, or use a Customer Voice survey to see what type of visitor they are.
 
-<a href="https://marketing-lab.nl/work/how-to-personal-event-agenda">>> Personal Agenda in Customer Insights - Journeys</a>
+<a href="https://renee.vanderwalt.eu/blog/how-to-personal-event-agenda">>> Personal Agenda in Customer Insights - Journeys</a>
 
 ## Tip #6 - Personal QR code or Teams Link
 
 Another effective way to personalize the reminder process is by using a personal QR code (for physical events) or a Teams link (for online events). It acts as their personal ticket to your event, which they cannot exchange with someone else. Additionally, this gives you the opportunity to get more registrants, as any colleagues they want to invite will need to register themselves.
 
-<a href="https://marketing-lab.nl/work/event-registration-qr-code-in-real-time-marketing-email">>> Using Personal QR Codes in Customer Insights - Journeys</a>
+<a href="https://renee.vanderwalt.eu/blog/event-registration-qr-code-in-real-time-marketing-email">>> Using Personal QR Codes in Customer Insights - Journeys</a>
 
 ## Tip #7 - Make it Simple to Cancel
 
 Though it might seem counterintuitive, making the cancellation process simple is one of the best ways to prevent no-shows. It's better to know in advance if registrants will not attend than to find out on the day of the event. So, make it easy!
 
-<a href="https://marketing-lab.nl/work/how-to-make-a-simple-event-cancellation-process">>> Handling Cancellations in Customer Insights - Journeys</a>
+<a href="https://renee.vanderwalt.eu/blog/how-to-make-a-simple-event-cancellation-process">>> Handling Cancellations in Customer Insights - Journeys</a>
 
 ## Wrap-Up
 
 We all fear a high no-show percentage. These seven proven tricks will help you reduce it when organizing your next event!
-
-#### Continue the Event Story
-
-<a href="https://marketing-lab.nl/work/event-marketing-basics">Event Marketing Basics</a>
-
-<a href="https://marketing-lab.nl/work/please-register-here">Please Register Here - The Invitation Process</a>
-
-<a href="https://marketing-lab.nl/work/urgency-in-event-communications">Why You Need Urgency in Your Event Communications</a>
-
-<a href="https://marketing-lab.nl/work/social-proof-in-event-communications">Using the Concept of Social Proof in Event Communications</a>

@@ -17,39 +17,39 @@ All the technical stuff like alt text on images, checking links, and UTM coding 
 
 There are multiple ways you can ask for feedback. Let's take a look at some (Dutch) examples.
 
-![Feedback with two emojis](/assets/images/blog/thumbs-up-down/Example_two_emojis.jpg)
+![Feedback with two emojis](../assets/images/posts/thumbs-up-down/Example_two_emojis.jpg)
 
 *Example 1 - Do you have a minute? To improve our services, we are curious about your opinion.*
 
-![Feedback with thumbs up/down](/assets/images/blog/thumbs-up-down/Example_two_icons.jpg)
+![Feedback with thumbs up/down](../assets/images/posts/thumbs-up-down/Example_two_icons.jpg)
 
 *Example 2 - What do you think of this email?*
 
-![Feedback with two emojis and color](/assets/images/blog/thumbs-up-down/Example_two_icons_color.jpg)
+![Feedback with two emojis and color](../assets/images/posts/thumbs-up-down/Example_two_icons_color.jpg)
 
 *Example 3 - What do you think of this email?*
 
-![Feedback with thumbs up/down and color](/assets/images/blog/thumbs-up-down/Example_two_icons_color_text.jpg)
+![Feedback with thumbs up/down and color](../assets/images/posts/thumbs-up-down/Example_two_icons_color_text.jpg)
 
 *Example 4 - What do you think of this email?*
 
-![Feedback with three emojis](/assets/images/blog/thumbs-up-down/Example_three_emojis.jpg)
+![Feedback with three emojis](../assets/images/posts/thumbs-up-down/Example_three_emojis.jpg)
 
 *Example 5*
 
-![Feedback with three emojis and color](/assets/images/blog/thumbs-up-down/Example_three_icons_color.jpg)
+![Feedback with three emojis and color](../assets/images/posts/thumbs-up-down/Example_three_icons_color.jpg)
 
 *Example 6 - What do you think of this email?*
 
-![Feedback with five emojis](/assets/images/blog/thumbs-up-down/Example_five_icons_emoji.jpg)
+![Feedback with five emojis](../assets/images/posts/thumbs-up-down/Example_five_icons_emoji.jpg)
 
 *Example 7 - Tell us what you think*
 
-![Feedback with five emojis and color](/assets/images/blog/thumbs-up-down/Example_five_icons_emoji_color.jpg)
+![Feedback with five emojis and color](../assets/images/posts/thumbs-up-down/Example_five_icons_emoji_color.jpg)
 
 *Example 8 - What did you think of this email?*
 
-![Feedback with 10 numbers and color](/assets/images/blog/thumbs-up-down/Example_ten_numbers_color.jpg)
+![Feedback with 10 numbers and color](../assets/images/posts/thumbs-up-down/Example_ten_numbers_color.jpg)
 
 *Example 9 - How do you rate this email?*
 

@@ -13,11 +13,11 @@ Since the moment I first touched email HTML, I learned that nothing is what it s
 
 One of the things I hate the most is when a desktop two-column Z-pattern looks like this 👇:
 
-![Two-column Z-pattern section](/assets/images/blog/two-column-mobile-design/Two-column-z-patterned-section.png)
+![Two-column Z-pattern section](../assets/images/posts/two-column-mobile-design/Two-column-z-patterned-section.png)
 
 But the mobile version looks like this 👇:
 
-![Ugly mobile version of Z-pattern](/assets/images/blog/two-column-mobile-design/Ugly-mobile-version-of-z-pattern.png)
+![Ugly mobile version of Z-pattern](../assets/images/posts/two-column-mobile-design/Ugly-mobile-version-of-z-pattern.png)
 
 <span style="font-size: 48px;">😭😤👿</span>
 
@@ -33,11 +33,11 @@ In your email template, create Z-pattern two-column sections and add your images
 
 Thanks to the user-friendly email HTML editor, we can easily locate the HTML code for the columns. Open the HTML editor and click on the left column containing the text. In the first blue-highlighted `td` element, add the class `bottom`, as shown in the image below.
 
-![Left column of lower section](/assets/images/blog/two-column-mobile-design/Select-left-column-and-add-bottom.png)
+![Left column of lower section](../assets/images/posts/two-column-mobile-design/Select-left-column-and-add-bottom.png)
 
 Next, select the right column containing the image. In the first blue-highlighted `td` element, add the class `top`, as shown below.
 
-![Right column of lower section](/assets/images/blog/two-column-mobile-design/Select-right-column-and-add-top.png)
+![Right column of lower section](../assets/images/posts/two-column-mobile-design/Select-right-column-and-add-top.png)
 
 #### Step 3 - Adjusting the `<style>` Section
 
@@ -61,13 +61,13 @@ To enhance mobile responsiveness, we need to modify the media query. Add the fol
 
 Your email HTML code should now look like this:
 
-![Adjusted HTML in the style section](/assets/images/blog/two-column-mobile-design/HTML-style-adjusted.png)
+![Adjusted HTML in the style section](../assets/images/posts/two-column-mobile-design/HTML-style-adjusted.png)
 
 #### Step 4 - Test Your Work
 
-Save your email and send yourself a test email or <a href="https://marketing-lab.nl/work/how-to-send-live-test-email">live test</a> to review the mobile results.
+Save your email and send yourself a test email or <a href="https://renee.vanderwalt.eu/blog/how-to-send-live-test-email">live test</a> to review the mobile results.
 
-![Pretty mobile version](/assets/images/blog/two-column-mobile-design/Pretty-mobile-version-of-z-pattern.png)
+![Pretty mobile version](../assets/images/posts/two-column-mobile-design/Pretty-mobile-version-of-z-pattern.png)
 
 <span style="font-size: 48px;">🤓😁🤩</span>
 

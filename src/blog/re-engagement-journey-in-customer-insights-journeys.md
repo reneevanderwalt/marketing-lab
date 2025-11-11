@@ -14,7 +14,7 @@ I have been talking to a lot of marketers in the past 15 years. There are two th
 1. Hitting send on an email  
 2. Eliminating contacts from their list
 
-To feel more confident when sending emails, check out [this blog post](https://marketing-lab.nl/work/email-testing) I wrote a couple of months ago. If you're scared of the second thing, dare to keep on reading!
+To feel more confident when sending emails, check out [this blog post](https://renee.vanderwalt.eu/blog/email-testing) I wrote a couple of months ago. If you're scared of the second thing, dare to keep on reading!
 
 #### Why You Shouldn't Be Scared of Email List Cleaning
 
@@ -93,19 +93,19 @@ Time for the fun part! Here’s an example setup:
 
 Use the **Behavioral section** in the segment builder.
 
-![Email Engagement Segment in Dynamics Customer Insights - Journeys](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Email-Engagment-In-Segment.png)
+![Email Engagement Segment in Dynamics Customer Insights - Journeys](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Email-Engagment-In-Segment.png)
 
 Add "Email Delivered" criteria and set to 12 interactions over the past 12 months:
 
-![Email Delivered Criteria](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Email-Deliverd-Interactions.png)
+![Email Delivered Criteria](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Email-Deliverd-Interactions.png)
 
 Remove the specific email filter to apply to *all* email sends:
 
-![Remove Email Filter](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Remove-Email-Element-Email-Delivered.png)
+![Remove Email Filter](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Remove-Email-Element-Email-Delivered.png)
 
 Next, add "Email Clicked" set to **less than 1** interaction in the last 6 months. Set the condition to **But not**:
 
-![Final Re-engagement Segment](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Final-Re-Engagement-Segment.png)
+![Final Re-engagement Segment](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Final-Re-Engagement-Segment.png)
 
 #### Step 3: Build Your Journey
 
@@ -118,19 +118,19 @@ Start with the segment. Choose:
 
 If you want contacts to re-enter after becoming inactive again (e.g., three years later), choose **option 2** and set up your segment accordingly:
 
-![Repeatable Segment Logic](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Addition-To-Segment.png)
+![Repeatable Segment Logic](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Addition-To-Segment.png)
 
 Otherwise, use a one-time journey:
 
-![Journey Start](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Journey-Start.png)
+![Journey Start](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Journey-Start.png)
 
 Send your three emails, spaced by seven days. Exit the series upon any link click:
 
-![Email Series in Journey](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Series-In-Journey.png)
+![Email Series in Journey](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Series-In-Journey.png)
 
 If no clicks occur after the three emails plus seven days, trigger a **commercial opt-in removal** via Custom Trigger and Cloud Flow:
 
-![Final Steps in Journey](/assets/images/blog/re-engagement-campaign-in-customer-insights-journeys/Final-Steps-In-Journey.png)
+![Final Steps in Journey](../assets/images/posts/re-engagement-campaign-in-customer-insights-journeys/Final-Steps-In-Journey.png)
 
 Once someone clicks, they’re back in your newsletter segment 🥳.
 
@@ -144,7 +144,7 @@ Depending on your business, you can enhance the re-engagement flow with:
 - Highlight product improvements  
 - Show personalized product recommendations  
 
-💡 And don't forget to [A/B test your content](https://marketing-lab.nl/work/ab-testing-in-customer-insights-journeys)!
+💡 And don't forget to [A/B test your content](https://renee.vanderwalt.eu/blog/ab-testing-in-customer-insights-journeys)!
 
 Also, consider **excluding** these contacts:
 1. Those currently in a welcome series  

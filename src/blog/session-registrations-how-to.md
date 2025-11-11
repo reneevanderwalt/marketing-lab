@@ -22,7 +22,7 @@ There are four steps to achieve this:
 ## The Feature Switch
 To access this functionality, you need to enable the feature switch in the Settings section of your Dynamics Customer Insights – Journey App.
 
-![Set feature switch to yes](/assets/images/blog/session-registrations/Session_Registration_Feature_Switch.png)
+![Set feature switch to yes](../assets/images/posts/session-registrations/Session_Registration_Feature_Switch.png)
 
 When you do this, a couple of things happen in the background, but the most important one for us users is the creation of a new default event registration form, named “Default registration form with Sessions”.
 
@@ -30,29 +30,29 @@ When you do this, a couple of things happen in the background, but the most impo
 
 You can set up your event like you are used to. Fill out all the fields you need and create all the sessions you want. Here is an overview of an example event with multiple sessions at the same time.
 
-![Overview of Event with multiple Sessions](/assets/images/blog/session-registrations/Overview_of_Event_With_Sessions.png)
+![Overview of Event with multiple Sessions](../assets/images/posts/session-registrations/Overview_of_Event_With_Sessions.png)
 
 To ensure registrants can schedule their own agenda on the form, we need to make sure that:
 
 1. All the sessions are in live state.
 2. The toggle “Allow registrants to create their own agenda” is set to yes. This toggle is available on the Agenda tab on your event.
 
-![Set the toggle Allow registrants to create their own agenda to yes](/assets/images/blog/session-registrations/Allow_registrations_to_schedule_own_agenda.png)
+![Set the toggle Allow registrants to create their own agenda to yes](../assets/images/posts/session-registrations/Allow_registrations_to_schedule_own_agenda.png)
 
 ### Set the Session in Live State
 There are two ways to do that. You can do it directly from the quick create form by setting the “Publish status” to live.
 
-![Use the Quick Create form to set the Session Live](/assets/images/blog/session-registrations/Quick_Create_Session.png)
+![Use the Quick Create form to set the Session Live](../assets/images/posts/session-registrations/Quick_Create_Session.png)
 
 Another way is directly from the session record and hitting the “Go live” button in the ribbon.
 
-![Use the Go Live button on the session form](/assets/images/blog/session-registrations/Go_Live_button_session.png)
+![Use the Go Live button on the session form](../assets/images/posts/session-registrations/Go_Live_button_session.png)
 
 ## Using the Registration Form
 
 Enabling the feature switch creates a new registration form. Go to your Website and form tab on the event, and in the field “Registration form”, make sure you select the form “Default registration form with Sessions”.
 
-![Set the correct registration form](/assets/images/blog/session-registrations/Set_Default_Registration_form.png)
+![Set the correct registration form](../assets/images/posts/session-registrations/Set_Default_Registration_form.png)
 
 ### Changing the Registration Form
 If you want to take a look at the form or make changes to this default form, read <a href="https://meganvwalker.com/finding-your-realtime-event-registration-forms/" target="_blank">this blog of Megan V. Walker</a> on where to find the form. The changes you can make on the form are:

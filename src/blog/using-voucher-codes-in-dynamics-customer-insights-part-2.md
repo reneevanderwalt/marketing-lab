@@ -9,7 +9,7 @@ description: |
 tags: ["email marketing", "marketing automation", "marketing strategy"]
 ---
 
-In the <a href="https://marketing-lab.nl/using-voucher-codes-in-dynamics-customer-insights-part-1">previous post</a> we all talked about the ‘technical’ part of using voucher codes in Dynamics Customer Insights. Now we are looking at the fun part, using the voucher codes in Real Time Marketing.
+In the <a href="https://renee.vanderwalt.eu/blog/using-voucher-codes-in-dynamics-customer-insights-part-1">previous post</a> we all talked about the ‘technical’ part of using voucher codes in Dynamics Customer Insights. Now we are looking at the fun part, using the voucher codes in Real Time Marketing.
 
 ## The Solution in Short
 
@@ -19,7 +19,7 @@ In the <a href="https://marketing-lab.nl/using-voucher-codes-in-dynamics-custome
 4.	Create a Real Time Marketing email to get the voucher code to the customer.
 5.	Create a Real Time Marketing journey to combine all things together.
 
-Steps one till three are already covered in the <a href="https://marketing-lab.nl/using-voucher-codes-in-dynamics-customer-insights-part-1">previous post</a>, so now we will focus on steps four and five.
+Steps one till three are already covered in the <a href="https://renee.vanderwalt.eu/blog/using-voucher-codes-in-dynamics-customer-insights-part-1">previous post</a>, so now we will focus on steps four and five.
 
 ## Create a Real Time Marketing Email
 
@@ -33,11 +33,11 @@ Create an email like you are used to in your template. Make sure everything is i
 
 Go to Personalize and open up the List section and create a new list.
 
-![Create a list from the Personalize tab](/assets/images/blog/voucher-codes-part-two/Personalize_list_section.png)
+![Create a list from the Personalize tab](../assets/images/posts/voucher-codes-part-two/Personalize_list_section.png)
 
 Search for "voucher code" and use the one from the contact entity.
 
-![Select the voucher code entity from the contact](/assets/images/blog/voucher-codes-part-two/Select_voucher_code_entity_from_contact.png)
+![Select the voucher code entity from the contact](../assets/images/posts/voucher-codes-part-two/Select_voucher_code_entity_from_contact.png)
 
 Next up we are going to do three things.
 
@@ -49,31 +49,31 @@ Next up we are going to do three things.
 
 We want to make sure that we only display the voucher codes from the campaign that we are creating this email for. So click on "Add list filter" and set the campaign field as the value you provided in your voucher codes. In this example we will use "Bounce Report".
 
-![Set condition to campaign](/assets/images/blog/voucher-codes-part-two/Set_condition_to_campaign.png)
+![Set condition to campaign](../assets/images/posts/voucher-codes-part-two/Set_condition_to_campaign.png)
 
 #### Set Number of Voucher Codes
 
 Next up, the number of voucher codes. Since we only give one voucher code to the contact with the Power Automate, we need to make sure that we only see one. So set the **Max amount of items** to "1" and the **Order by** to "createdon" and "Descending". Now we will get the latest voucher code for this campaign.
 
-![Set the number of voucher codes](/assets/images/blog/voucher-codes-part-two/Just_one_voucher_code.png)
+![Set the number of voucher codes](../assets/images/posts/voucher-codes-part-two/Just_one_voucher_code.png)
 
 #### Select the Columns for our Email Content
 
 Last part is to select the columns that we want to use in our Email Content. If you have fields like date and time, you can also set the display settings here. In this case I need both the voucher code and the end date.
 
-![Select the columns](/assets/images/blog/voucher-codes-part-two/Set_the_content_with_columns.png)
+![Select the columns](../assets/images/posts/voucher-codes-part-two/Set_the_content_with_columns.png)
 
 And now click "Save & copy". A new pop-up appears. Click on "Copy".
 
-![Copy the code from the Code generator](/assets/images/blog/voucher-codes-part-two/Code_generator.png)
+![Copy the code from the Code generator](../assets/images/posts/voucher-codes-part-two/Code_generator.png)
 
 Now you can paste the code in your email and do some additional styling or adding additional content.
 
-![Code in email](/assets/images/blog/voucher-codes-part-two/Code_in_email.png)
+![Code in email](../assets/images/posts/voucher-codes-part-two/Code_in_email.png)
 
 Please make sure that you do check the content in the Preview section by selecting a Contact with an actual voucher code in the "Edit sample data" section. Here you can check your final email.
 
-![Look and feel of final email](/assets/images/blog/voucher-codes-part-two/Final_email.png)
+![Look and feel of final email](../assets/images/posts/voucher-codes-part-two/Final_email.png)
  
   
 ### Step three – Go Live
@@ -91,11 +91,11 @@ Create a Journey like you wish, using either a Segment or Trigger based Journey.
 
 In the Journey now select “Activate a custom trigger”. Select the Trigger “Voucher Code – Create”.
 
-![Look and feel of final email](/assets/images/blog/voucher-codes-part-two/Journey_voucher_code_create_trigger.png)
+![Look and feel of final email](../assets/images/posts/voucher-codes-part-two/Journey_voucher_code_create_trigger.png)
  
 To make sure we select the correct Voucher Codes for this campaign, we need to set the attribute Campaign to Value “Bounce Report” (as we did in the email).
 
-![Look and feel of final email](/assets/images/blog/voucher-codes-part-two/Journey_voucher_code_create_attribute.png)
+![Look and feel of final email](../assets/images/posts/voucher-codes-part-two/Journey_voucher_code_create_attribute.png)
  
 ### Step three – Adding a Condition
 
@@ -103,13 +103,13 @@ Now the Contact is going to be set to the Voucher Code, we just want to make sur
 
 Set the trigger to “Voucher Code – Out” and the time limit to one hour (or any other time limit). The Power Automate takes approximately 20 seconds.
 
-![Look and feel of final email](/assets/images/blog/voucher-codes-part-two/Journey_voucher_code_out.png)
+![Look and feel of final email](../assets/images/posts/voucher-codes-part-two/Journey_voucher_code_out.png)
  
 ### Step four – Adding the Email
 
 When the Condition is met, we want to send out the Email. So add an Email tile and select the Email you created in the previous section.
 
-![Look and feel of final email](/assets/images/blog/voucher-codes-part-two/Journey_overview.png)
+![Look and feel of final email](../assets/images/posts/voucher-codes-part-two/Journey_overview.png)
 
 ### Step five – Go Live
 

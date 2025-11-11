@@ -45,9 +45,9 @@ By the way #2! That is why I would always suggest using a sub domain for sending
 
 If you want to make sure that replies land in the right inbox, set the reply-to email address. In Dynamics Customer Insights - Journeys you can do this in two places. In the email itself or by creating a Sender in your Brand Profile.
 
-![Set the reply-to address in the email self](/assets/images/blog/reply-to/Set-reply-to-in-email-itself.png)
+![Set the reply-to address in the email self](../assets/images/posts/reply-to/Set-reply-to-in-email-itself.png)
 
-![Set the reply-to address in a Sender in your Brand Profile](/assets/images/blog/reply-to/Set-reply-to-in-sender-in-brand-profile.png)
+![Set the reply-to address in a Sender in your Brand Profile](../assets/images/posts/reply-to/Set-reply-to-in-sender-in-brand-profile.png)
  
 ## Become an artist too
 

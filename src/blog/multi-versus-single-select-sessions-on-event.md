@@ -24,11 +24,11 @@ This higher education organization hosts 90 Experience Days across nine facultie
 
 The first step is to set up the event itself. This higher education organization holds similar events, like Experience Days, so we will create an event for each type per faculty.
 
-![An overview of the Experience Days events per faculty](/assets/images/blog/multi-versus-single-select-sessions-on-event/Overview-of-Events-Per-Faculty.png)
+![An overview of the Experience Days events per faculty](../assets/images/posts/multi-versus-single-select-sessions-on-event/Overview-of-Events-Per-Faculty.png)
 
 Each Experience Day date within the academic year will have its own sessions. We also added the **Session max. capacity** field to the session form, which can be filled manually.
 
-![Session overview of one of the Experience Days events](/assets/images/blog/multi-versus-single-select-sessions-on-event/Sessions-per-Event.png)
+![Session overview of one of the Experience Days events](../assets/images/posts/multi-versus-single-select-sessions-on-event/Sessions-per-Event.png)
 
 #### Step 2 - Set the Sessions to Single Select
 
@@ -37,13 +37,13 @@ Go to the Website and form tab on your event and there we find the new fields. M
 2. Set the **Allow single session registration only** field to *Yes*.
 3. Set the **Make session registration required** field to *Yes*.
 
-![Select the Allow participants to create their own agenda](/assets/images/blog/multi-versus-single-select-sessions-on-event/Allow-registrants-to-create-their-own-agenda.png)
+![Select the Allow participants to create their own agenda](../assets/images/posts/multi-versus-single-select-sessions-on-event/Allow-registrants-to-create-their-own-agenda.png)
 
 #### Step  - Add the New Form to the Event
 
 Publish the event and if we look at the standalone page (or your website), we can see all the available sessions with radio buttons. Participants can and must select only one session.
 
-![The adjusted form with radiobuttons instead of checkboxes](/assets/images/blog/multi-versus-single-select-sessions-on-event/Actual-form-on-website.png)
+![The adjusted form with radiobuttons instead of checkboxes](../assets/images/posts/multi-versus-single-select-sessions-on-event/Actual-form-on-website.png)
 
 When the submission is completed, it creates an event registration and a session registration for the selected session 🥳.
 
@@ -56,7 +56,7 @@ Here are a few optimizations for the form based on the use case:
 
 There are several ways to address this, such as using Business Rules, help fields, or Cloud Flows. Choose your preferred method to optimize the customer experience, so your final form will look like this:
 
-![The final form with radiobuttons and the correct sessions](/assets/images/blog/multi-versus-single-select-sessions-on-event/Final-form-with-correct-sessions-and-radiobuttons.png)
+![The final form with radiobuttons and the correct sessions](../assets/images/posts/multi-versus-single-select-sessions-on-event/Final-form-with-correct-sessions-and-radiobuttons.png)
 
 #### Wrap-Up
 
